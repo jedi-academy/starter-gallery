@@ -5,3 +5,4 @@ Manjot Khalsa
 ## Version
 1.0 Static Website
 2.0 Implemented CodeIgniter Framework 
+3.0 Updated Master Template along with our Views & Controllers to complement it
