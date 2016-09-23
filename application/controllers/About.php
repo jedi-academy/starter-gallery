@@ -19,7 +19,7 @@ class About extends Application
 	 */
 	public function index()
 	{
-		$this->load->view("welcome");
+		$this->load->view("about");
 	}
 
 }
