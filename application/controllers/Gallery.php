@@ -6,8 +6,7 @@ class Gallery extends Application
 {
     public function index()
     {
-        $this->data['pagebody'] = 'gallery';
-		$this->render();
+        $this->load->view('gallery');
     }
 
 }
