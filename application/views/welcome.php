@@ -14,10 +14,10 @@
 		<span class="myhead">Simple Image Gallery</span>
                 <span class="mynav">
                     <ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="/gallery">Gallery</a></li>
-						<li><a href="/about">About</a></li>
-					</ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/gallery">Gallery</a></li>
+                        <li><a href="/about">About</a></li>
+                    </ul>
                 </span>
 	</div>
 	<div class="alone"></div>
