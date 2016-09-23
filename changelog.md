@@ -1,7 +1,9 @@
 Author: Lize Wu
-        Lingzhu YU
+        Lingzhu Yu
 ----------------------------------------------------------------------
 All people should update the changelog before making pull request.
 All comments should be in English.
 ----------------------------------------------------------------------
-2016/9/22 16:04 create changelog.md
+2016/9/22 16:04 Created changelog.md
+----------------------------------------------------------------------
+2016/9/22 16:54 Merged starter-gallery with CodeIgniter starter. Added three controllers and three views.
