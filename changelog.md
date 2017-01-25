@@ -8,7 +8,7 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 
 Release Date: Jan 29, 2016
 
-## Version 1.0
+## Version 1.1
 
 Added gallery, about, and welcome controllers and added controllers for these views.
 In addition moved html files into the views folder and changed extension type.
