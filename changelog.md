@@ -9,6 +9,3 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 Release Date: Jan 24, 2017
 - Setup new organization and team repo.
 - Created new changelog.
-
-
-
