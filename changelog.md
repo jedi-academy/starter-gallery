@@ -16,3 +16,6 @@ In addition moved html files into the views folder and changed extension type.
 Added MVC design pattern. Changed the controllers to route to the proper views:
 about, welcome, gallery. Added a master template to allow injection of content. 
 
+## Version 1.3
+Created a database and linked the project to it. Also took out unnecessary html from
+the welcome and gallery views. 
