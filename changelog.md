@@ -4,12 +4,6 @@ Team membership: Tommy Tran (Captain) & Harold Lee (Mate)
 Team conventions: Allman notation, markdown for changelog  
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
-*Version 1.0.2*
-
-Release Date: Jan 26, 2017
-- Changed template.php
-- Changed My_Controller.php (line 26 and line 27)
-- Changed controllers based on controller rendering
 
 *Version 1.0.1*
 
