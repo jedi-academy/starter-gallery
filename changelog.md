@@ -10,7 +10,6 @@ Release Date: Jan 28, 2017
 - Completed "Basic to Good Website Conversion"
 - Added Images model 
 - dynamically loads data from database
-- changed config
 
 *Version 1.0.2*
 
