@@ -4,6 +4,13 @@ Team membership: Tommy Tran (Captain) & Harold Lee (Mate)
 Team conventions: Allman notation, markdown for changelog  
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
+*Version 1.0.3*
+
+Release Date: Jan 28, 2017
+- Completed "Basic to Good Website Conversion"
+- Added Images model 
+- dynamically loads data from database
+
 *Version 1.0.2*
 
 Release Date: Jan 26, 2017
