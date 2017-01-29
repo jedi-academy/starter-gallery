@@ -5,7 +5,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Welcome extends Application
 {
 
-
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,7 +19,6 @@ class Welcome extends Application
 	 */
 	public function index()
 	{
-
 		//get the newest images from our model
 		$pix = $this->images->newest();
 
@@ -44,6 +42,6 @@ class Welcome extends Application
 
 		$this->data['pagebody'] = 'welcome'; 
 		$this->render();
-	}
 
+	}
 }

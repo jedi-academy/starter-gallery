@@ -19,6 +19,7 @@ class Gallery extends Application
 	 */
 	public function index()
 	{
+
 		//get all the images from our model 
 		$pix = $this->images->all();
 
@@ -43,5 +44,4 @@ class Gallery extends Application
 		$this->data['pagebody'] = 'gallery'; 
 		$this->render();
 	}
-
 }
