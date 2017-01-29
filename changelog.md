@@ -1,33 +1,32 @@
 #Change Log
 
-Team membership:  AB (Captain) & CD (Mate)  
+Team membership: Tommy Tran (Captain) & Harold Lee (Mate)  
 Team conventions: Allman notation, markdown for changelog  
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
-## *Version x.x*
+*Version 1.0.3*
 
-Release Date: Jul 26, 2027
+Release Date: Jan 28, 2017
+- Completed "Basic to Good Website Conversion"
+- Added Images model 
+- dynamically loads data from database
 
-## New Components
+*Version 1.0.2*
 
--   controllers
+Release Date: Jan 26, 2017
+- Changed template.php
+- Changed My_Controller.php (line 26 and line 27)
+- Changed controllers based on controller rendering
 
-    -   serbian (AB)
-    
-## Updated Components
+*Version 1.0.1*
 
--   controllers
-
-    -   german (CD)
-    -   hindi (CD)
-
--   models
-
-    -   italian (AB)
-
--   views
-
-    -   slovenian (AB)
-    -   swedish
+Release Date: Jan 26, 2017
+- Added CI starter.
+- Set up controller and view fixed urls.
 
 
+*Version 1.0.0*
+
+Release Date: Jan 24, 2017
+- Setup new organization and team repo.
+- Created new changelog.
