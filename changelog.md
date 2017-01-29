@@ -6,3 +6,4 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 
 1. Completed part 1 of the lab
 
+2. This is a signing test
