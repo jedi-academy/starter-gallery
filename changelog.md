@@ -1,33 +1,12 @@
 #Change Log
 
-Team membership:  AB (Captain) & CD (Mate)  
-Team conventions: Allman notation, markdown for changelog  
-Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
+Team membership:  Maitiu Morton (Captain) & Michael Goll (Mate)
+Team Repository:  http://www.github.com/MikiuLab3/starter-gallery
 
-## *Version x.x*
+Date | Description | Name (email)
 
-Release Date: Jul 26, 2027
+2017/01/26 | Converted static HTML website to partial CodeIgniter web application. | Michael Goll (mike_g97@hotmail.com)
 
-## New Components
+2017/01/26 | Added template html that grabs the content form the appropiate pages | Maitiu Morton (maitiumorton@gmail.com)
 
--   controllers
-
-    -   serbian (AB)
-    
-## Updated Components
-
--   controllers
-
-    -   german (CD)
-    -   hindi (CD)
-
--   models
-
-    -   italian (AB)
-
--   views
-
-    -   slovenian (AB)
-    -   swedish
-
-
+2017/01/26 | Converted basic CodeIgniter web application to "good" CodeIgniter web application. | Michael Goll (mike_g97@hotmail.com)
