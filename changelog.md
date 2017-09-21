@@ -1,8 +1,14 @@
 #Change Log
 
-Team membership:  AB (Captain) & CD (Mate)  
+Team membership:  BT (Captain) & SC (First Mate) & GY (Second Mate)  
 Team conventions: Allman notation, markdown for changelog  
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
+
+## *Version 1.1*  - SC (First Mate)
+
+## New Components
+
+Added Views and Controllers
 
 ## *Version 1.0*
 
