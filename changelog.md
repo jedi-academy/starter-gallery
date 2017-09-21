@@ -11,3 +11,6 @@ Release Date: Sept 21, 2017
 
 Sean
     - Pushed completed tutorial 1 -
+
+Bill
+    - completed tutorial 2 -
