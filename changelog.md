@@ -6,5 +6,6 @@ Team membership:  Michael (Captain) & Evan (Mate1) & Yannick (Mate2)
 Release Date: Sep 21, 2017
 
 Captain - Tutorial part 1
+Mate2 - Tutorial part 2
 
 
