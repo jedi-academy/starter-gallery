@@ -1,33 +1,69 @@
 #Change Log
 
-Team membership:  AB (Captain) & CD (Mate)  
-Team conventions: Allman notation, markdown for changelog  
-Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
+Team membership:  Stephanie Cosacescu (Captain) & HM (Mate)  
 
-## *Version x.x*
+## Version 1.1
 
-Release Date: Jul 26, 2027
+Release Date: N/A 
+Author: HM
 
 ## New Components
 
--   controllers
-
-    -   serbian (AB)
+* controllers
+    * About 
+    * Gallery
+    
+* views 
+    * welcome
+    * gallery
+    * about    
     
 ## Updated Components
+* controllers
+    * Welcome
+    
+## Version 1.1
 
--   controllers
+Release Date: N/A 
+Author: SC
 
-    -   german (CD)
-    -   hindi (CD)
+## New Components
 
--   models
+* views 
+    * template
+    
+## Updated Components
+* controllers
+    * About
+    * Gallery
+    * Welcome 
+    * MY_Controller 
+    
+* views
+    * welcome
+    * gallery
+    * about
+    
+## Version 2.0
 
-    -   italian (AB)
+Release Date: Sept 22, 2017 
+Author: HM 
 
--   views
+## New Components
 
-    -   slovenian (AB)
-    -   swedish
-
+* models
+    * Images
+    
+## Updated Components
+* controllers
+    * About
+    * Gallery
+    * Welcome 
+    
+* views
+    * welcome
+    * gallery
+    * about
+    
+* autoload.php    
 
