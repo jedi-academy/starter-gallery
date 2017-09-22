@@ -29,8 +29,6 @@
 			<!--<div id="footer" class="span12">
                 Copyright &copy; 2017 <a href="mailto:someone@somewhere.com">Me</a>
 			</div>-->
-            <h1>This is just a simple image gallery :)</h1>
-            <p>The images above are the three most recently posted.</p>
         </div>
         <div id="footer" class="span12">
             Copyright &copy; 2017,  <a href="mailto:someone@somewhere.com">Me</a>.

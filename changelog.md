@@ -3,6 +3,20 @@
 Team membership:  BT (Captain) & SC (First Mate) & GY (Second Mate)  
 Team conventions: Allman notation, markdown for changelog  
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
+
+## *Version 1.3*  - GY (Second Mate)
+
+## New Components
+
+Added images model and cell view
+
+## Updated Components
+
+Updated Gallery and Welcome controllers to utilize database to grab images
+Updated Gallery and Welcome views to display images using CodeIgniter's Table library
+Removed text from Template view that is intended for Welcome page only
+Added text to Welcome view that is intended for Welcome page only
+
 ## *Version 1.2*  - BT (Captain)
 
 ## New Components
