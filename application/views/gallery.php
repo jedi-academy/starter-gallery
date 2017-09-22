@@ -1,5 +1,6 @@
-
-<table cols="3" class="gallery">
+{thetable}
+<h1>The image gallery, complete :)</h1>
+<!--<table cols="3" class="gallery">
     <tr>
         <td class="oneimage">
             <a href="./data/Katmai_Crater_1980.jpg" data-lightbox="gallery" data-title="Katmai Crater - Mount Katmai, Alaska ... Posted 2014.05.05 by donald, in landscape"><img src="./data/thumb/Katmai_Crater_1980.jpg"/></a>
@@ -67,7 +68,7 @@
     </tr>
     <tr>
     </tr>
-</table>
+</table>-->
                 <!--<h1>The image gallery, complete :)</h1>
             </div>
             <div id="footer" class="span12">
