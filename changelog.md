@@ -1,33 +1,24 @@
-#Change Log
+# Changelog
+- All notable changes to this project will be documented in this file.
+- This project will be using the K&R notation.
+- Changelog's will be listed newest to oldest from top to bottom:
 
-Team membership:  AB (Captain) & CD (Mate)  
-Team conventions: Allman notation, markdown for changelog  
-Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
+Project contributors:
+- Sergey
+- Tim
+- Karl
 
-## *Version x.x*
 
-Release Date: Jul 26, 2027
+## [v0.2.0] - Sept 24, 3.07 pm
+### Added
+- New functionality within controllers allows for generation of image tables
+- Refactored app to no longer use hard-coded paths.
 
-## New Components
+## [v0.1.0] - Sept 22, 12.03 pm
+### Added
+- Converted Static site to CodeIgniter Site 
 
--   controllers
-
-    -   serbian (AB)
-    
-## Updated Components
-
--   controllers
-
-    -   german (CD)
-    -   hindi (CD)
-
--   models
-
-    -   italian (AB)
-
--   views
-
-    -   slovenian (AB)
-    -   swedish
-
+## [Unreleased] - Sept 21, 4.34 pm
+### Added
+- Changelog (additions newest first).
 
