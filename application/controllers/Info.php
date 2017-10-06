@@ -23,7 +23,7 @@ class Info extends  Application
         {
             $link_data = array(
                 'display' => $airplane['id'],
-                'url' => '/fleet/'. $airplane['id']
+                'url' => '/info/fleet/'. $airplane['id']
             );
             $link = $this->parser->parse('template/_link', $link_data, true);
             $this->table->add_row($link, $airplane['plane_id']);
@@ -53,7 +53,7 @@ class Info extends  Application
         {
             $link_data = array(
                 'display' => $flight['id'],
-                'url' => '/flight/'. $flight['id']
+                'url' => '/info/flight/'. $flight['id']
             );
             $flight_link = $this->parser->parse('template/_link', $link_data, true);
             $this->table->add_row(
