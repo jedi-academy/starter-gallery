@@ -1,10 +1,15 @@
 #Change Log
 
 Team membership:  
+    - Hai Hua (Ryan) Tan <ryanhhtan@gmail.com> 
+[!!! Please add your info here!!! -----------DELETE THIS LINE BEFORE SUBMISSION]
+
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
 ## *Version 1.0*
-[added before submission]
+[!!!added before submission!!!-----------DELETE THIS LINE BEFORE SUBMISSION]
+
+
 
 ## *Version 0.3*
 ### Description
