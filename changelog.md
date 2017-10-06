@@ -10,8 +10,8 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 ### Description
     - Restructured the project, got the menubar, controllers and pages work.
     - Added arbitrarily-generated random data in model fleet and flights.
-    - Show data in a table 
-    - Modified Info controller to be RESTish, moved the showing fuction to the Pages controller 
+    - Added tables to show the data. 
+    - Modified Info controller to be RESTish, moved the showing fuction to the Pages controller. 
 
 ### New Components
 -   models
