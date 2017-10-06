@@ -12,10 +12,14 @@ class Info extends  Application
 
     function fleet()
     {
+        /*
         $this->data['title'] = 'Raven Air Fleet';
         $this->data['pagebody'] = 'fleet';
+         */
         $airplanes = $this->fleet->all();
 
+        echo json_encode($airplanes);
+        /*
         $this->load->library('table');
 
         $this->table->set_heading('Fleet ID', 'Plane ID');
@@ -34,6 +38,7 @@ class Info extends  Application
         $this->table->set_template($template);
         $this->data['thetable'] = $this->table->generate();
         $this->render();
+         */
     }
 
     function show_fleet($id) {
@@ -42,10 +47,15 @@ class Info extends  Application
 
     function flights()
     {
+        /*
         $this->data['title'] = 'Raven Air Fleet';
         $this->data['pagebody'] = 'flights';
+         */
         $flights = $this->flights->all();
 
+        echo json_encode($flights);
+
+        /*
         $this->load->library('table');
 
         $this->table->set_heading('Flight ID', 'Fleet', 'Departure Airport', 'Departure time', 'Arrival Airport', 'Arrivaltime');
@@ -70,6 +80,7 @@ class Info extends  Application
             $this->table->set_template($template);
             $this->data['thetable'] = $this->table->generate();
             $this->render();
+         */
     }
 
     function show_flight($id) {
