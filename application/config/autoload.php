@@ -134,6 +134,6 @@ $autoload['language'] = array();
 */
 
 
-$autoload['model'] = array('images');
+$autoload['model'] = array('quotes');
 
-$autoload['libraries'] = array('');
+$autoload['libraries'] = array('parser');

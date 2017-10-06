@@ -5,6 +5,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Info extends  Application
 {
 
+	function __construct()
+	{
+		parent::__construct();
+	}
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -19,9 +24,30 @@ class Info extends  Application
 	 */
 	public function view($page = 'home')
 	{
-		$this->load->view('template/header');
-		$this->load->view('pages/'.$page);
-		$this->load->view('template/footer');
+
+		
+		if($page == 'home'){
+			
+			$this->data['pagebody'] = 'home';
+			
+					// build the list of authors, to pass on to our view
+					$source = $this->quotes->all();
+			
+					// pass on the data to present, as the "authors" view parameter
+					$this->data['table'] = $source;
+			
+					$this->render();
+			
+		}else {
+			$this->data['pagebody'] = $page;
+			$key = $page;
+			$source = $this->quotes->get($key);
+			$this->data['table'] = $source;
+			$this->data = array_merge($this->data, (array) $source);
+			$this->render();
+
+		}
+		
 	}
 
 }

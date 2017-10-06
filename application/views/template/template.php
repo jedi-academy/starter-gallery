@@ -22,4 +22,11 @@
     </nav>
     <div class="container">
 
+         {content}
+    </div>
+    <div id="footer" class="span12">
+                Copyright &copy; 2017,  Me</a>.
+            </div>
+    </body>
+</html>
 

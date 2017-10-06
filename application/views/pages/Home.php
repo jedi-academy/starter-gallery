@@ -1,1 +1,6 @@
-<h1>template setting</h1>
+{table}
+
+<h1>{page}</h1>
+<h3>{content} </h3> 
+
+{/table}
