@@ -1,33 +1,40 @@
 #Change Log
 
-Team membership:  AB (Captain) & CD (Mate)  
-Team conventions: Allman notation, markdown for changelog  
+Team membership:  
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
 ## *Version x.x*
 
-Release Date: Jul 26, 2027
+Release Date: Oct 5, 2017
 
 ## New Components
 
 -   controllers
 
-    -   serbian (AB)
-    
+    -   Add info.php       (Hugh)
+
+-   view
+    -   Add home.php    (Hugh)
+    -   Add Fleet.php   (Hugh)
+    -   Add about.php   (Hugh)
+    -   Add Flight.php  (Hugh)
+    -   Add Footer.php  (Hugh)
+    -   Add Header.php  (Hugh)
+
 ## Updated Components
 
 -   controllers
 
-    -   german (CD)
-    -   hindi (CD)
 
 -   models
 
-    -   italian (AB)
 
 -   views
 
-    -   slovenian (AB)
-    -   swedish
+
+
+-   others
+    -   routes.php
+
 
 
