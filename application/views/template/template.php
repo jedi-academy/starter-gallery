@@ -1,22 +1,17 @@
 <html>
     <head>
         <title> Revan </title>
-        <link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="<?php echo base_url(); ?>home">Raven</a>
+                <a class="navbar-brand" href="/">Raven</a>
             </div>
             <div id="navbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="<?php echo base_url(); ?>home">Home</a></li>
-                    <li><a href="<?php echo base_url(); ?>fleet">Fleet</a></li>
-                    <li><a href="<?php echo base_url(); ?>flight">Flight</a></li>
-                    <li><a href="<?php echo base_url(); ?>about">About</a></li>
-
-                </ul>
+                {menubar}
             </div>
         </div>
     </nav>
@@ -25,8 +20,10 @@
          {content}
     </div>
     <div id="footer" class="span12">
-                Copyright &copy; 2017,  Me</a>.
-            </div>
+        <a>Copyright &copy; 2017,  Me</a>.
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     </body>
 </html>
 
