@@ -30,7 +30,7 @@ class Pages extends Application {
         {
             $link_data = array(
                 'display' => $airplane['id'],
-                'url' => '/info/fleet/'. $airplane['id']
+                'url' => '/fleet/'. $airplane['id']
             );
             $link = $this->parser->parse('template/_link', $link_data, true);
             $this->table->add_row($link, $airplane['plane_id']);
@@ -54,7 +54,7 @@ class Pages extends Application {
         {
             $link_data = array(
                 'display' => $flight['id'],
-                'url' => '/info/flight/'. $flight['id']
+                'url' => '/flight/'. $flight['id']
             );
             $flight_link = $this->parser->parse('template/_link', $link_data, true);
             $this->table->add_row(
@@ -71,5 +71,28 @@ class Pages extends Application {
             $this->table->set_template($template);
             $this->data['thetable'] = $this->table->generate();
             $this->render();
+    }
+    
+    function show_fleet($id) {
+        $plane = $this->fleet->getPlane($id);
+        
+        $this->data['title'] = 'Raven Air Fleet: ' . $plane['id'];
+        $this->data['pagebody'] = 'fleet';
+
+        $this->load->library('table');
+        
+        foreach($plane as $key=>$value) 
+        {  
+            if ($key != 'key'){ // Avoid adding the key name 'key' as a row...
+                $this->table->add_row($key, $value);
+            }
+        }
+        $template = array(
+            'table_open' => '<table border="1" cellpadding="2" cellspacing="1" class="table">'
+        );
+        $this->table->set_template($template);
+        $this->data['thetable'] = $this->table->generate();
+        $this->render();
+
     }
 }
