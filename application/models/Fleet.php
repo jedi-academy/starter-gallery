@@ -73,28 +73,13 @@ class Fleet extends CI_Model
         return !isset($this->data[$which]) ? null : $this->data[$which];
     }
     public function getPlane($id) {
-    //    foreach ($this->data as $key => $record)
-    //    {
-          //  $record['key'] = $key;
-    //        $this->data[$key] = $record;
-    //    }
-        
-        
-      //  foreach($this->data  as $fleet) {
-
-     //   }
-        
-        foreach($this->data  as $fleet) {
+       foreach($this->data  as $fleet) {
             if ($fleet['id'] == $id) {
                 return $fleet;
             }
             
         }
         return null;
-        
-      //  $fleet = $this->data['1'];
-       // return $fleet['model'];
-       
     }
     // retrieve all of the quotes
     public function all()
