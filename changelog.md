@@ -19,9 +19,9 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 
 ## *Version 0.4*
 ### Description
-    - Try to fix about weebhook, first test
+    - Try to fix about weebhook, first test    (Hugh)
     
-    - change part of template css
+    - change part of template css       (Hugh)
 
 ### Updated Components
     - style.css
