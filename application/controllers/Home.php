@@ -5,7 +5,7 @@ class Home extends Application
 {
     function index() 
     {
-        $this->data['pagebody'] = 'webhook';
+        $this->data['pagebody'] = 'pages/home';
         $this->data['title'] = 'Raven Airline';
         $this->data['fleet_count'] = $this->fleet->count();
         $this->data['flight_count'] = $this->flights->count();
