@@ -33,7 +33,7 @@ class Application extends CI_Controller
     {
         $this->data['menubar'] = $this->parser->parse('template/_menubar', $this->config->item('menu_choices'), true);
         $this->data['origin'] = $this->uri->uri_string();
-        $this->data['content'] = $this->parser->parse('pages/'.$this->data['pagebody'], $this->data, true);
+        $this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
         $this->parser->parse('template/'.$template, $this->data);
     }
 
