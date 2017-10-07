@@ -10,6 +10,16 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 [!!!added before submission!!!-----------DELETE THIS LINE BEFORE SUBMISSION]
 
 
+## *Version 0.4*
+### Description
+    - Try to fix about weebhook, first test
+    - change part of template css
+
+### Updated Components
+    - style.css
+    - template.php (change to the new boostrap, go to https://bootswatch.com/slate/ to see how to use) 
+
+
 
 ## *Version 0.3*
 ### Description

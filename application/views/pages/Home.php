@@ -1,4 +1,6 @@
+<div id="page_title">
 <h1>{title}</h1>
+</div>
 
         <div id="content">
             <div class="container">
