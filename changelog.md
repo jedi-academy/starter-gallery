@@ -9,6 +9,8 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 ## *Version 1.0*
 [!!!added before submission!!!-----------DELETE THIS LINE BEFORE SUBMISSION]
 
+
+
 ## *Version 0.5*
 ### Description
     - Fixed webhook hosting.
@@ -16,6 +18,8 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
     - Moved all the pages directly under views folder, and removed pages subfolder (Ryan)
     - Removed Pages controller, added FleetController and FlightsController instead. (Ryan) 
     - Modify routes to adapt to new structure. (Ryna) 
+    - Change all of page name in view fold into lower case      (Hugh)
+    - Because the server is case sensitive, modify all names in route.php       (Hugh)
 
 ## *Version 0.4*
 ### Description
