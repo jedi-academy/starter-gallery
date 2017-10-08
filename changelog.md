@@ -5,6 +5,7 @@ Team membership:
     - Yuheng(Hugh) Song <hugh.happy.everyday@gmail.com> 
     - Harshita Sharma <hsharma15@my.bcit.ca>
     - Junnan Tang <junnan.tang.2014@gmail.com>
+    - Terra Hunter <ms.terra.h@gmail.com>
 [!!! Please add your info here!!! -----------DELETE THIS LINE BEFORE SUBMISSION]
 
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
@@ -14,12 +15,25 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 
 ## *Version 0.8*
 ### Description
-    - Fix conflicts.
-
+    - Updated JSON buttons to adjust, depending on page it is on.
+    - Cleaned up the flights views and removed the flightdetails.php, so we only need to use flights.php
+    - Enabled some table headers & stuff to be capitalized and removed underscores.
 ### Updated components
     - Fix Flight page disappeared table style. (Junnan)
     - Fix navbar, when screen is small, navbar will change to a toggle. (Junnan)
     - Fix footer position in fleet datail and flight detail page (Junnan)
+    - controllers
+        - FleetController.php (Terra) 
+        - FlightController.php (Terra) 
+    - views
+        -flight.php (Terra)       
+                             
+### Deleted components
+    - controllers
+        - FleetController.php (Terra) 
+        - FlightController.php (Terra) 
+    - views
+        -flight.php (Terra)                                    
 
 ## *Version 0.7*
 ### Description
@@ -91,6 +105,10 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 ### Updated Components
 -   controllers
     -   Info.php    (Terra, Ryan)
+    -   Pages.php   (Terra)
+-   models
+    -   flights.php (Terra)
+    -   fleet.php (Terra)
 -   others
     -   route.php   (Ryan)
 
@@ -116,6 +134,7 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
     -   home.php    (hugh)
     -   fleet.php   (hugh)
     -   flight.php  (hugh)
+    -   about.php   (Terra)
 
 
 -   others
