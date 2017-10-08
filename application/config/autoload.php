@@ -134,6 +134,6 @@ $autoload['language'] = array();
 */
 
 
-$autoload['model'] = array('fleet','flights');
+$autoload['model'] = array('fleet','flights','airports');
 
 $autoload['libraries'] = array('parser');

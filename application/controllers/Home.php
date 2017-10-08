@@ -19,6 +19,16 @@ class Home extends Application
         $this->data['title'] = 'Raven Airline';
         $this->data['fleet_count'] = $this->fleet->count();
         $this->data['flight_count'] = $this->flights->count();
+        $this->data['airport_count'] = $this->airports->count();
+        
+        $airports = $this->airports->all();
+        $airport_list = '';
+        foreach($airports as $port) 
+        {   
+           $airport_list = $airport_list . $port['id'] . '<br>';
+        }
+         $this->data['airport_list'] = $airport_list;
+        
 
         $this->render();
 
