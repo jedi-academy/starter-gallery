@@ -4,39 +4,103 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Flights extends CI_Model
 {
     var $data = array(
-        '1'	 => array(
-            'id' => 'RI2343',
-            'fleet_id' => 'REWQ2432',
-            'departure_airport_id'=> 'XQU',
-            'departure_time' =>'09:30',
-            'arrival_airport_id'=> 'YAA',
-            'arrival_time' =>'10:30'
-        ),
-        '2'	 => array(
-            'id' => 'RI3847',
-            'fleet_id' => 'REVC4332',
-            'departure_airport_id'=> 'YAL',
-            'departure_time' =>'10:30',
-            'arrival_airport_id'=> 'YAZ',
-            'arrival_time' =>'13:30'
-        ),
-        '3'	 => array(
-            'id' => 'RI4385',
-            'fleet_id' => 'REWQ5342',
-            'departure_airport_id'=> 'YVR',
-            'departure_time' =>'13:30',
-            'arrival_airport_id'=> 'YBD',
-            'arrival_time' =>'17:30'
-        ),
-        '4'	 => array(
-            'id' => 'RI7432',
-            'fleet_id' => 'REOM3239',
-            'departure_airport_id'=> 'YVR',
-            'departure_time' =>'15:30',
-            'arrival_airport_id'=> 'YBL',
-            'arrival_time' =>'19:30'
-        )
-	);
+    '1'	 => array(
+        'id' => 'RI183',
+        'fleet_id' => 'baron',
+        'departure_airport_id'=> 'YXS',
+        'departure_time' =>'09:30',
+        'arrival_airport_id'=> 'YPR',
+        'arrival_time' =>'10:30'
+    ),
+    '2'	 => array(
+        'id' => 'RI189',
+        'fleet_id' => 'baron',
+        'departure_airport_id'=> 'YPR',
+        'departure_time' =>'13:30',
+        'arrival_airport_id'=> 'YDQ',
+        'arrival_time' =>'15:00'
+    ),
+    '3'	 => array(
+        'id' => 'RI196',
+        'fleet_id' => 'baron',
+        'departure_airport_id'=> 'YDQ',
+        'departure_time' =>'16:15',
+        'arrival_airport_id'=> 'YXS',
+        'arrival_time' =>'17:30'
+    ),
+    '4'	 => array(
+        'id' => 'RI248',
+        'fleet_id' => 'mustang',
+        'departure_airport_id'=> 'YXS',
+        'departure_time' =>'11:00',
+        'arrival_airport_id'=> 'YDQ',
+        'arrival_time' =>'12:15'
+    ),
+    '5'	 => array(
+        'id' => 'RI257',
+        'fleet_id' => 'mustang',
+        'departure_airport_id'=> 'YDQ',
+        'departure_time' =>'13:00',
+        'arrival_airport_id'=> 'YVR',
+        'arrival_time' =>'15:00'
+    ),
+    '6'	 => array(
+        'id' => 'RI289',
+        'fleet_id' => 'mustang',
+        'departure_airport_id'=> 'YVR',
+        'departure_time' =>'17:30',
+        'arrival_airport_id'=> 'YXS',
+        'arrival_time' =>'18:55'
+    ),
+    '7'	 => array(
+        'id' => 'RI315',
+        'fleet_id' => 'pc12ng',
+        'departure_airport_id'=> 'YXS',
+        'departure_time' =>'08:00',
+        'arrival_airport_id'=> 'YVR',
+        'arrival_time' =>'09:25'
+    ),
+    '8'	 => array(
+        'id' => 'RI329',
+        'fleet_id' => 'pc12ng',
+        'departure_airport_id'=> 'YVR',
+        'departure_time' =>'11:30',
+        'arrival_airport_id'=> 'YPR',
+        'arrival_time' =>'12:45'
+    ),
+    '9'	 => array(
+        'id' => 'RI333',
+        'fleet_id' => 'pc12ng',
+        'departure_airport_id'=> 'YPR',
+        'departure_time' =>'13:30',
+        'arrival_airport_id'=> 'YDQ',
+        'arrival_time' =>'15:00'
+    ),
+    '10' => array(
+        'id' => 'RI392',
+        'fleet_id' => 'pc12ng',
+        'departure_airport_id'=> 'YDQ',
+        'departure_time' =>'19:30',
+        'arrival_airport_id'=> 'YXS',
+        'arrival_time' =>'20:45'
+    ),
+    '11' => array(
+        'id' => 'RI408',
+        'fleet_id' => 'REOM3239',
+        'departure_airport_id'=> 'YXS',
+        'departure_time' =>'14:00',
+        'arrival_airport_id'=> 'YPR',
+        'arrival_time' =>'15:00'
+    ),
+    '12' => array(
+        'id' => 'RI473',
+        'fleet_id' => 'REOM3239',
+        'departure_airport_id'=> 'YPR',
+        'departure_time' =>'20:30',
+        'arrival_airport_id'=> 'YXS',
+        'arrival_time' =>'21:30'
+    )
+    );
     // Constructor
     public function __construct()
     {
