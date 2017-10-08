@@ -3,6 +3,8 @@
 Team membership:  
     - Hai Hua (Ryan) Tan <ryanhhtan@gmail.com> 
     - Yuheng(Hugh) Song <hugh.happy.everyday@gmail.com> 
+    - Harshita Sharma <hsharma15@my.bcit.ca>
+    - Junnan Tang <junnan.tang.2014@gmail.com>
 [!!! Please add your info here!!! -----------DELETE THIS LINE BEFORE SUBMISSION]
 
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
@@ -10,6 +12,31 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 ## *Version 1.0*
 [!!!added before submission!!!-----------DELETE THIS LINE BEFORE SUBMISSION]
 
+## *Version 0.7*
+### Description
+    - Added mouse over hover component for the flights.
+### Updated components
+    - Modified view/flights to add the table components in the view itself 
+      instead of passing the table created in the FlightsController 
+      to include the hover tag for each table row.                   (Harshita)                                    (Harshita)
+    - Modified the FlightsController to just pass the data to the views 
+      instead of passing tables to the views                        (Harshita)
+### New Components
+-   views
+    -   flightdetails.php    (Harshita)
+      
+## *Version 0.6*
+### Description
+    - Beautify our webapp
+
+### New Components
+    - Two pictures in public/data (Junnan)
+
+### Updated components
+    - Add information in about.php under application/views (Junnan)
+    - Modify styles in template.php under application/views/template (Junnan)
+    - Modify styles in fleet.php and flights.php (Junnan)
+    - Modify table styles in Table.php under system/libraries (Junnan)
 
 ## *Version 0.5*
 ### Description
