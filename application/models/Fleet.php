@@ -5,35 +5,8 @@ class Fleet extends CI_Model
     var $data = array
         (
             '1' => array(
-                'id' => 'REWQ2432',
-                'plane_id' => 'avanti',    
-                "manufacturer" => "Piaggo",
-                "model" => "Avanti II",
-                "price" => "7195",
-                "seats" => "8",
-                "reach" => "2797",
-                "cruise" => "589",
-                "takeoff" => "994",
-                "hourly" => "977"
-            ),
-            '2' => array
-            (
-                'id' => 'REVC4332',
-                'plane_id' => 'baron',
-                "manufacturer" => "Beechcraft",
-                "model" => "Baron",
-                "price" => "1350",
-                "seats" => "4",
-                "reach" => "1948",
-                "cruise" => "373",
-                "takeoff" => "701",
-                "hourly" => "340"
-            ),
-            '3' => array
-            (
-                'id' => 'REBD6332',
-                'plane_id' => 'pc12ng',
-                "manufacturer" => "Pilatus",
+                "id" => "pc12ng",
+                "plane_id" => "Pilatus",
                 "model" => "PC-12 NG",
                 "price" => "3300",
                 "seats" => "9",
@@ -41,6 +14,30 @@ class Fleet extends CI_Model
                 "cruise" => "500",
                 "takeoff" => "450",
                 "hourly" => "727"
+            ),
+            '2' => array
+            (
+                "id" => "mustang",
+                "plane_id" => "Cessna",
+                "model" => "Citation Mustang",
+                "price" => "2770",
+                "seats" => "4",
+                "reach" => "2130",
+                "cruise" => "630",
+                "takeoff" => "950",
+                "hourly" => "1015"
+            ),
+            '3' => array
+            (
+                "id" => "baron",
+                "plane_id" => "Beechcraft",
+                "model" => "Baron",
+                "price" => "1350",
+                "seats" => "4",
+                "reach" => "1948",
+                "cruise" => "373",
+                "takeoff" => "701",
+                "hourly" => "340"
             ),
             '4' => array
             (
