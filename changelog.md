@@ -19,6 +19,9 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
     - Cleaned up the flights views and removed the flightdetails.php, so we only need to use flights.php
     - Enabled some table headers & stuff to be capitalized and removed underscores.
 ### Updated components
+    - Fix Flight page disappeared table style. (Junnan)
+    - Fix navbar, when screen is small, navbar will change to a toggle. (Junnan)
+    - Fix footer position in fleet datail and flight detail page (Junnan)
     - controllers
         - FleetController.php (Terra) 
         - FlightController.php (Terra) 
