@@ -51,13 +51,11 @@
  </div>
  <div id="footer" class="panel panel-default">
 
-     <footer class="footer">
-         <a>Copyright &copy; 2017,  group Raven</a>.
-     </footer>
-   
+    <div class="panel-body">
+        <a>Copyright &copy; 2017,  group Raven</a>.
+    </div> 
 </div>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>
-
