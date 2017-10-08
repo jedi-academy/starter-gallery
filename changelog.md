@@ -28,6 +28,8 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
     - views
         - flight.php (Terra) 
         - template/_mouseover.php (Terra)
+        - template/template.php add viewport for mobile size (Junnan)
+        - about.php change info (Junnan)
                              
 ### Deleted components
     - controllers
