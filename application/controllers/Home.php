@@ -9,6 +9,10 @@ class Home extends Application
     }
 
     
+    /**
+    *The home controller is used to load home view
+    *and display the home page
+    */
     function index() 
     {
         $this->data['pagebody'] = 'home';
