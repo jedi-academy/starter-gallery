@@ -1,4 +1,6 @@
 <h1>{title}</h1>
+{jsonbutton}
 {thetable}
-<a class="btn btn-default" href="/info/fleet" target="_blank"> Show JSON </a>
+
+
 

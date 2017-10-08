@@ -37,6 +37,7 @@ class FleetController extends Application
         );
         $this->table->set_template($template);
         $this->data['thetable'] = $this->table->generate();
+        $this->data['jsonbutton'] = '<a class="btn btn-default" href="/info/fleet" target="_blank"> Show JSON </a>';
         $this->render();
     }
 
@@ -63,6 +64,7 @@ class FleetController extends Application
         );
         $this->table->set_template($template);
         $this->data['thetable'] = $this->table->generate();
+        $this->data['jsonbutton'] = '<a class="btn btn-default" href="/info/fleet/' . $id . '" target="_blank"> Show JSON </a>';
         $this->render();
 
     }
