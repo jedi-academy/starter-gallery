@@ -57,7 +57,7 @@ class FlightsController extends Application
         $this->table->set_template($template);
         $this->data['thetable'] = $this->table->generate();
         
-        $this->data['jsonbutton'] = '<a class="btn btn-primary" href="/info/flights" target="_blank"> Show JSON </a>';
+        $this->data['jsonbutton'] = '<a class="btn btn-default" href="/info/flights" target="_blank"> Show JSON </a>';
         
         $this->render();
         

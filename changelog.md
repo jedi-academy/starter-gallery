@@ -31,6 +31,7 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
         - template/template.php add viewport for mobile size (Junnan)
         - about.php change info (Junnan)
         - template/template.php fix mobile background size (Junnan)
+        - FlightsController.php fix button color (Junnan)
                              
 ### Deleted components
     - controllers
