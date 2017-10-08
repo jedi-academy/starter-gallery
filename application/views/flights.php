@@ -1,7 +1,6 @@
 <h1>{title}</h1>
-<a class="btn btn-primary" href="/info/flights" target="_blank"> Show JSON </a>
 <table border="1" cellpadding="2" cellspacing="1" class="table">
-    <tr>
+    <tr class="danger">
         <th>Flight ID</th>
         <th>Fleet</th>
         <th>Departure Airport</th>
@@ -17,13 +16,14 @@
                 {id}
             </a>
         </td>
-        <td>{fleet_id}</td>
+        <td style="background-color:rgba(0, 0, 0, .3);">{fleet_id}</td>
         <td>{departure_airport_id}</td>
-        <td>{departure_time}</td>
+        <td style="background-color:rgba(0, 0, 0, .3);">{departure_time}</td>
         <td>{arrival_airport_id}</td>
-        <td>{arrival_time}</td>
+        <td style="background-color:rgba(0, 0, 0, .3);">{arrival_time}</td>
     </tr>
     {/flight_table}
 </table>
+<a class="btn btn-default" href="/info/flights" target="_blank"> Show JSON </a>
 
 

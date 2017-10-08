@@ -12,6 +12,15 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 ## *Version 1.0*
 [!!!added before submission!!!-----------DELETE THIS LINE BEFORE SUBMISSION]
 
+## *Version 0.8*
+### Description
+    - Fix conflicts.
+
+### Updated components
+    - Fix Flight page disappeared table style. (Junnan)
+    - Fix navbar, when screen is small, navbar will change to a toggle. (Junnan)
+    - Fix footer position in fleet datail and flight detail page (Junnan)
+
 ## *Version 0.7*
 ### Description
     - Added mouse over hover component for the flights.
