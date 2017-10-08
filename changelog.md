@@ -10,8 +10,15 @@ Team membership:
 
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
-## *Version 1.0*
+## *Version 1.1*
 [!!!added before submission!!!-----------DELETE THIS LINE BEFORE SUBMISSION]
+
+## *Version 1.0*
+### Description
+    - Created the flights schedule.
+### Updated components
+    - Modified model/flight to show the flights schedule as per the business rules.
+       (Harshita)
 
 ## *Version 0.9*
 ### Description
