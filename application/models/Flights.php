@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Flights extends CI_Model
 {
+    private static $uid = 0;
     var $data = array(
     '1'	 => array(
         'id' => 'RI183',
@@ -134,5 +135,47 @@ class Flights extends CI_Model
             }            
         }
         return null;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //***WORK IN PROGRESS***///
+    private function flightBuilder($origin, $dest, $fleet, $startTime) {
+
+        $flight = array(
+            'id' => 'RICUST' . $uid,
+            'fleet_id' => $fleet['id'],
+            'departure_airport_id'=> $origin,
+            'departure_time' =>'09:30',
+            'arrival_airport_id'=> $dest,
+            'arrival_time' =>'10:30'
+        );
+        $uid++; 
+        
+        
     }
 }

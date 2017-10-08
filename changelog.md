@@ -10,10 +10,11 @@ Team membership:
 
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
-## *Version 1.1*
+## *Version 1.0*
 [!!!added before submission!!!-----------DELETE THIS LINE BEFORE SUBMISSION]
 
-## *Version 1.0*
+
+## *Version 0.95*
 ### Description
     - Created the flights schedule.
 ### Updated components
@@ -25,6 +26,21 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
     - Modified the data to show the appropriate fleet.
 ### Updated components
     - Modified model/fleet to show the updated fleet details.       (Harshita)
+    
+    
+## *Version 0.85*
+### Description
+    - Added code for showing the Airport list on homepage
+### Updated components
+    - controllers
+        - Home.php (Terra) 
+    - views
+        - home.php (Terra) 
+    - models
+        - Airports.php (Terra)
+        - Flights.php (Terra)
+    - other
+        - config/autoload.php (Terra)
 
 
 ## *Version 0.8*
