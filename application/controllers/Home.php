@@ -23,9 +23,15 @@ class Home extends Application
         
         $airports = $this->airports->all();
         $airport_list = '';
+        $counter = 0;
         foreach($airports as $port) 
-        {   
-           $airport_list = $airport_list . $port['id'] . '<br>';
+        {  if($port['id'] == "YXS")
+           $airport_list = $airport_list . '<b>'.$port['id'] . 
+                " - Base Airport" .'</b><br>';
+            else 
+                $airport_list = $airport_list . $port['id'] . 
+                    " - Destination " .$counter.'<br>';
+            $counter++;
         }
          $this->data['airport_list'] = $airport_list;
         

@@ -11,7 +11,13 @@ Team membership:
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
 ## *Version 1.0*
-[!!!added before submission!!!-----------DELETE THIS LINE BEFORE SUBMISSION]
+### Description
+    - Updated a few things on the home page
+### Updated components
+    - Modified view/home to remove the 0s from before the number of airports 
+        and number of flights.  (Harshita)
+    - Modified controllers/Home to show which airport is base and which are 
+        destinations.           (Harshita)
 
 ## *Version 0.95.2*
 ### Description
