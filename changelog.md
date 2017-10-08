@@ -13,6 +13,12 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 ## *Version 1.0*
 [!!!added before submission!!!-----------DELETE THIS LINE BEFORE SUBMISSION]
 
+## *Version 0.95.1*
+### Description
+    - Moved the JSON template button to the bottom in fleet view.
+### Updated components
+    - Modified view/fleet to show the JSON template button after the table 
+      instead of before.        (Harshita)
 
 ## *Version 0.95*
 ### Description
@@ -28,7 +34,7 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
     - Modified model/fleet to show the updated fleet details.       (Harshita)
     
     
-## *Version 0.85*
+## *Version 0.8.1*
 ### Description
     - Added code for showing the Airport list on homepage
 ### Updated components
