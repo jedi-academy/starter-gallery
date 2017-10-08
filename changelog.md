@@ -14,6 +14,15 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 [!!!added before submission!!!-----------DELETE THIS LINE BEFORE SUBMISSION]
 
 
+
+
+## *Version 0.9*
+### Description
+    - Modified the data to show the appropriate fleet.
+### Updated components
+    - Modified model/fleet to show the updated fleet details.       (Harshita)
+    
+    
 ## *Version 0.85*
 ### Description
     - Added code for showing the Airport list on homepage
@@ -44,6 +53,10 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
     - views
         - flight.php (Terra) 
         - template/_mouseover.php (Terra)
+        - template/template.php add viewport for mobile size (Junnan)
+        - about.php change info (Junnan)
+        - template/template.php fix mobile background size (Junnan)
+        - FlightsController.php fix button color (Junnan)
                              
 ### Deleted components
     - controllers
