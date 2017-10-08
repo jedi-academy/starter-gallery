@@ -37,6 +37,7 @@ class FleetController extends Application
         );
         $this->table->set_template($template);
         $this->data['thetable'] = $this->table->generate();
+        $this->data['jsonbutton'] = '<a class="btn btn-default" href="/info/fleet" target="_blank"> Show JSON </a>';
         $this->render();
     }
 
@@ -54,8 +55,9 @@ class FleetController extends Application
         
         foreach($plane as $key=>$value) 
         {  
+            $key = str_replace("_"," ",$key);
             if ($key != 'key'){ // Avoid adding the key name 'key' as a row...
-                $this->table->add_row($key, $value);
+                $this->table->add_row(ucwords($key), $value);
             }
         }
         $template = array(
@@ -63,6 +65,7 @@ class FleetController extends Application
         );
         $this->table->set_template($template);
         $this->data['thetable'] = $this->table->generate();
+        $this->data['jsonbutton'] = '<a class="btn btn-default" href="/info/fleet/' . $id . '" target="_blank"> Show JSON </a>';
         $this->render();
 
     }
