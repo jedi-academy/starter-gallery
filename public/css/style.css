@@ -1,16 +1,21 @@
 /* CSS definition file containing sitestyle stylesheets */
-body {background-color: #0e101b;}
-#wrapper {max-width: 960px; margin:4px auto;margin-top:1em;padding:1em;padding-right:8px;box-shadow:0 0 5px  5px white;
-	font-family:  Arial, Helvetica, sans-serif;font-size: 13px;color: #F1F5F8;}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #c8c8c8;
+    background-color: #272b30;
+}
 
-#header {display:block}
-.myhead {color:#0A65C9;font-size:40px;font-weight:bold;padding:0px;margin:0px;}
-.mynav {float:right}
-.mynav ul {list-style-type:none; padding-top:20px;font-size: 120%;}
-.mynav ul li {float:left; margin-right:15px;color:white;list-style-type:none;}
-.mynav a {text-decoration:none;color:purple; font-weight:bold;}
-.mynav a:hover  {background-color: lavender}
+#footer {
+		position: relative;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		color: white;
+		text-align: center; 
+}
 
-.alone { clear:both; margin:10px;}
-#footer {font-family: Arial, Verdana, Helvetica ; font-size: 9pt; font-style:italic; text-align:center;}
-.oneimage {padding:1em; width:300px;text-align:center;}
+#page_title {
+	margin-bottom: 40px;
+}
