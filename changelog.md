@@ -26,7 +26,8 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
         - FleetController.php (Terra) 
         - FlightController.php (Terra) 
     - views
-        -flight.php (Terra)       
+        - flight.php (Terra) 
+        - template/_mouseover.php (Terra)
                              
 ### Deleted components
     - controllers
