@@ -13,11 +13,47 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 ## *Version 1.0*
 [!!!added before submission!!!-----------DELETE THIS LINE BEFORE SUBMISSION]
 
+## *Version 0.95.2*
+### Description
+    - Moved the JSON template button to the bottom in flights view.
+### Updated components
+    - Modified view/flight to show the JSON template button after the table 
+      instead of before.        (Harshita)
+
+## *Version 0.95.1*
+### Description
+    - Moved the JSON template button to the bottom in fleet view.
+### Updated components
+    - Modified view/fleet to show the JSON template button after the table 
+      instead of before.        (Harshita)
+
+## *Version 0.95*
+### Description
+    - Created the flights schedule.
+### Updated components
+    - Modified model/flight to show the flights schedule as per the business rules.
+       (Harshita)
+
 ## *Version 0.9*
 ### Description
     - Modified the data to show the appropriate fleet.
 ### Updated components
     - Modified model/fleet to show the updated fleet details.       (Harshita)
+    
+    
+## *Version 0.8.1*
+### Description
+    - Added code for showing the Airport list on homepage
+### Updated components
+    - controllers
+        - Home.php (Terra) 
+    - views
+        - home.php (Terra) 
+    - models
+        - Airports.php (Terra)
+        - Flights.php (Terra)
+    - other
+        - config/autoload.php (Terra)
 
 
 ## *Version 0.8*
