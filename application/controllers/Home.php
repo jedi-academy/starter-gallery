@@ -3,6 +3,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends Application
 {
+    function __construct()
+    {
+        parent::__construct();
+    }
+
+    
     function index() 
     {
         $this->data['pagebody'] = 'home';

@@ -11,6 +11,28 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 
 
 
+## *Version 0.5*
+### Description
+    - Fixed webhook hosting.
+### Updated components
+    - Moved all the pages directly under views folder, and removed pages subfolder (Ryan)
+    - Removed Pages controller, added FleetController and FlightsController instead. (Ryan) 
+    - Modify routes to adapt to new structure. (Ryna) 
+    - Change all of page name in view fold into lower case      (Hugh)
+    - Because the server is case sensitive, modify all names in route.php       (Hugh)
+
+## *Version 0.4*
+### Description
+    - Try to fix about weebhook, first test    (Hugh)
+    
+    - change part of template css       (Hugh)
+
+### Updated Components
+    - style.css
+    - template.php (change to the new boostrap, go to https://bootswatch.com/slate/ to see how to use) 
+
+
+
 ## *Version 0.3*
 ### Description
     - Restructured the project, got the menubar, controllers and pages work.

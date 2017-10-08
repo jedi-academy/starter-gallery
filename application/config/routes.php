@@ -51,9 +51,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'home';
 $route['info/fleet/(:any)'] = 'info/show_fleet/$1';
-$route['info/flight/(:any)'] = 'info/show_flight/$1';
-$route['fleet'] = 'pages/fleet';
-$route['flights'] = 'pages/flights';
-$route['(:any)'] = 'pages/view/$1';
+$route['info/flights/(:any)'] = 'info/show_flight/$1';
+$route['fleet/(:any)'] = 'FleetController/show_fleet/$1';
+$route['flights/(:any)'] = 'FlightsController/show_flights/$1';
+$route['fleet'] = 'FleetController';
+$route['flights'] = 'FlightsController';
+//$route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
