@@ -1,6 +1,7 @@
 <?php
 class Fleet extends CI_Model
 {
+    
     var $data = array
         (
             '1' => array(
