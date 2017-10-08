@@ -48,13 +48,14 @@
 
          {content}
      </div>
- </div>
- <div id="footer" class="panel panel-default">
+    <footer class="footer">
+        <div id="footer" class="panel panel-default">
 
-    <div class="panel-body">
-        <a>Copyright &copy; 2017,  group Raven</a>.
-    </div> 
-</div>
+           <div class="panel-body">
+               <a>Copyright &copy; 2017,  group Raven</a>.
+           </div> 
+        </div>
+    </footer>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
