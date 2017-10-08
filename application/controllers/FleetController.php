@@ -55,8 +55,9 @@ class FleetController extends Application
         
         foreach($plane as $key=>$value) 
         {  
+            $key = str_replace("_"," ",$key);
             if ($key != 'key'){ // Avoid adding the key name 'key' as a row...
-                $this->table->add_row($key, $value);
+                $this->table->add_row(ucwords($key), $value);
             }
         }
         $template = array(
