@@ -14,64 +14,40 @@ class FlightsController extends Application
     }
 
     /**
-    * connect flight view and load all of flughts infomation for model
+    * connect flight view and load all of flights information for model
     */
 
     function index()
     {
+        // This is the view we want shown
         $this->data['title'] = 'Raven Air Fleet';
         $this->data['pagebody'] = 'flights';
+        
+        // Building the list of flights to pass to our view
         $flights = $this->flights->all();
-        $this->load->library('table');
-
-        $this->table->set_heading('Flight ID', 'Fleet', 'Departure Airport', 'Departure time', 'Arrival Airport', 'Arrivaltime');
-        foreach($flights as $flight) 
-        {
-            $link_data = array(
-                'display' => $flight['id'],
-                'url' => '/flights/'. $flight['id']
-            );
-            $flight_link = $this->parser->parse('template/_link', $link_data, true);
-            $this->table->add_row(
-                $flight_link,
-                $flight['fleet_id'],
-                $flight['departure_airport_id'], 
-                $flight['departure_time'],
-                $flight['arrival_airport_id'],
-                $flight['arrival_time']);
-        }
-            $template = array(
-                'table_open' => '<table border="1" cellpadding="2" cellspacing="1" class="table">'
-            );
-            $this->table->set_template($template);
-            $this->data['thetable'] = $this->table->generate();
-            $this->render();
+        
+        // pass on the data to present, as the "fligh_table" view parameter
+        $this->data['flight_table'] = $flights;
+        
+        $this->render();
     }
 
     /**
-    * when click one of the flight, the detail infomation will shows up.
+    * when click one of the flight, the detail information will shows up.
     */
     function show_flights($id) 
     {
+        // Geting the particular flight's details to pass to our view
         $flight = $this->flights->getFlight($id);
         
+        //This is the view we want shown
         $this->data['title'] = 'Raven Air Flight: ' . $flight['id'];
-        $this->data['pagebody'] = 'flights';
+        $this->data['pagebody'] = 'flightdetails';
 
-        $this->load->library('table');
+        // pass on the data to present, adding the flight details' fields
+        $this->data = array_merge($this->data, (array) $flight);
         
-        foreach($flight as $key=>$value) 
-        {  
-            if ($key != 'key'){ // Avoid adding the key name 'key' as a row...
-                $this->table->add_row($key, $value);
-            }
-        }
-        $template = array(
-            'table_open' => '<table border="1" cellpadding="2" cellspacing="1" class="table">'
-        );
-        $this->table->set_template($template);
-        $this->data['thetable'] = $this->table->generate();
         $this->render();
-
+        
     }
 }
