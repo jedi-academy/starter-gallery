@@ -12,7 +12,6 @@
         body
         {
             background-image:url('/data/raven.png');
-            background-size: contain;
         }
     </style>
 
