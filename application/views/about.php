@@ -27,9 +27,9 @@
     						<h3 class="panel-title">Info:</h3>
   							</div>
   							<div class="panel-body">
-  							This webapp is built in CodeIgniter to manage flight schedules for a regional airline.
-  							The fleet can consist of any number and kind of recognized airplanes, subject to a budget limit of $10M.
-  							The flight schedule is the same regardless of the day of the week. Each airport in the "network" is visited at least twice a day.
+  							<a href="info/fleet">Fleet Info</a>
+                <br>
+                <a href="info/flights">Flights Info</a>
   							</div>
 						</div>
 					</div>
