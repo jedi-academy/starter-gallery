@@ -2,13 +2,13 @@
 
 Team membership:  
     - Hai Hua (Ryan) Tan <ryanhhtan@gmail.com> 
+    - Yuheng(Hugh) Song <hugh.happy.everyday@gmail.com> 
 [!!! Please add your info here!!! -----------DELETE THIS LINE BEFORE SUBMISSION]
 
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
 ## *Version 1.0*
 [!!!added before submission!!!-----------DELETE THIS LINE BEFORE SUBMISSION]
-
 
 
 ## *Version 0.5*
@@ -20,6 +20,8 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
     - Modify routes to adapt to new structure. (Ryna) 
     - Change all of page name in view fold into lower case      (Hugh)
     - Because the server is case sensitive, modify all names in route.php       (Hugh)
+
+
 
 ## *Version 0.4*
 ### Description
@@ -55,6 +57,7 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
     -   Info.php    (Terra, Ryan)
 -   others
     -   route.php   (Ryan)
+
 
 ## *Version 0.2*
 ### Description
@@ -102,7 +105,7 @@ Release Date: Oct 5, 2017
 ### Updated Components
 
 -   others
-    -   routes.php  (hugh)
+    -   routes.php  (Hugh)
 
 
 

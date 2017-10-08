@@ -3,12 +3,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class FlightsController extends Application 
 {
+    /**
+    *The FlightsController controller is used to load Flights view, get table data from 
+    *Flights model, and display the Flights page
+    */
+
     function __construct()
     {
         parent::__construct();
     }
 
-    function index(){
+    /**
+    * connect flight view and load all of flughts infomation for model
+    */
+
+    function index()
+    {
         $this->data['title'] = 'Raven Air Fleet';
         $this->data['pagebody'] = 'flights';
         $flights = $this->flights->all();
@@ -38,7 +48,11 @@ class FlightsController extends Application
             $this->render();
     }
 
-    function show_flights($id) {
+    /**
+    * when click one of the flight, the detail infomation will shows up.
+    */
+    function show_flights($id) 
+    {
         $flight = $this->flights->getFlight($id);
         
         $this->data['title'] = 'Raven Air Flight: ' . $flight['id'];

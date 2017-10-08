@@ -1,14 +1,22 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class FleetController extends Application {
-
+class FleetController extends Application 
+{
+    /**
+    *The FleetController controller is used to load Fleet view, get table data from 
+    *Fleet model, and display the Fleet page
+    */
     function __construct()
     {
         parent::__construct();
     }
 
-    function index() {
+    /**
+    * connect fleet view and load all of fleet infomation for model
+    */
+    function index() 
+    {
         $this->data['title'] = 'Raven Air Fleet';
         $this->data['pagebody'] = 'fleet';
         $airplanes = $this->fleet->all();
@@ -32,7 +40,11 @@ class FleetController extends Application {
         $this->render();
     }
 
-    function show_fleet($id) {
+    /**
+    * when click one of the fleet, the detail infomation will shows up.
+    */
+    function show_fleet($id) 
+    {
         $plane = $this->fleet->getPlane($id);
         
         $this->data['title'] = 'Raven Air Fleet: ' . $plane['id'];
