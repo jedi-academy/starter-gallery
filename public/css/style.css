@@ -8,18 +8,12 @@ body {
 }
 
 #footer {
-		position: fixed;
+		position: relative;
 		left: 0;
 		bottom: 0;
 		width: 100%;
 		color: white;
 		text-align: center; 
-}
-
-#content {
-	width: 100%;
-    margin: 0 auto;
-    padding: 60px 0;
 }
 
 #page_title {
