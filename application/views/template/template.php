@@ -20,7 +20,7 @@
 
 <body>
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="container">
                 <div class="navbar-header">
@@ -44,11 +44,13 @@
 
             </div>
         </nav>
+<main>
         <div class="container">
 
          {content}
      </div>
-    <footer class="footer">
+</main>
+    <footer class="footer navbar-fixed-bottom">
         <div id="footer" class="panel panel-default">
 
            <div class="panel-body">

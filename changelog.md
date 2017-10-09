@@ -6,13 +6,13 @@ Team membership:
     - Harshita Sharma <hsharma15@my.bcit.ca>
     - Junnan Tang <junnan.tang.2014@gmail.com>
     - Terra Hunter <ms.terra.h@gmail.com>
-[!!! Please add your info here!!! -----------DELETE THIS LINE BEFORE SUBMISSION]
 
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
 ## *Version 1.0*
 ### Description
     - Updated a few things on the home page
+    - Fixed nabar and footer
 ### Updated components
     - Modified view/home to remove the 0s from before the number of airports 
         and number of flights.  (Harshita)
