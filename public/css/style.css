@@ -5,15 +5,24 @@ body {
     line-height: 1.42857143;
     color: #c8c8c8;
     background-color: #272b30;
+    margin-top: 50px; 
+
+}
+main {
+    height: 80%;
+    overflow-y: auto;
 }
 
-#footer {
+footer {
+    /*
 		position: relative;
 		left: 0;
 		bottom: 0;
+*/
 		width: 100%;
 		color: white;
 		text-align: center; 
+        background: #2e3338;
 }
 
 #page_title {
