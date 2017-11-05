@@ -7,9 +7,11 @@ Team membership:
     - Junnan Tang <junnan.tang.2014@gmail.com>
     - Terra Hunter <ms.terra.h@gmail.com>
 
-Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
-## *Version 1.0*
+## V 1.0.1
+### fixed invalid css CDN
+    - changed Google CDN instead of bootswatch 
+
 ### Description
     - Updated a few things on the home page
     - Fixed nabar and footer
