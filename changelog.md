@@ -8,10 +8,34 @@ Team membership:
     - Terra Hunter <ms.terra.h@gmail.com>
 
 
-## V 1.0.1
-### fixed invalid css CDN
-    - changed Google CDN instead of bootswatch 
+## *Version 1.1* 
+### Description
+    - Fixed missing bootstrap problem (Terra)
+    - Fixed navbar (Terra)
+    - Added user roles and sessions for them (Terra)
+### Updated components
+    - config.php
+    - autoload.php
+    - constants.php
+    - Views
+        - template/_menubar.php
+        - template/template.php
+### New Components
+    - public/tmp
+    - Controller
+        - Roles.php
 
+
+
+
+
+
+
+
+
+
+## *Version 1.0*
+>>>>>>> 5cb4075a2f8edbc4c3d5536ea7ff97360382886c
 ### Description
     - Updated a few things on the home page
     - Fixed nabar and footer
