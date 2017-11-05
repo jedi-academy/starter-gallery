@@ -9,6 +9,35 @@ Team membership:
 
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
+
+
+
+## *Version 1.1* 
+### Description
+    - Fixed missing bootstrap problem (Terra)
+    - Fixed navbar (Terra)
+    - Added user roles and sessions for them (Terra)
+### Updated components
+    - config.php
+    - autoload.php
+    - constants.php
+    - Views
+        - template/_menubar.php
+        - template/template.php
+### New Components
+    - public/tmp
+    - Controller
+        - Roles.php
+
+
+
+
+
+
+
+
+
+
 ## *Version 1.0*
 ### Description
     - Updated a few things on the home page
