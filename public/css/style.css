@@ -28,3 +28,12 @@ footer {
 #page_title {
 	margin-bottom: 40px;
 }
+
+li {
+    width:86px;
+    height:inherit;
+    display:inline-block;
+
+    display:inline;
+}
+
