@@ -7,3 +7,5 @@
 /nbproject/private/
 /nbproject/
 public/tmp/*
+/vendor/*
+/tests/report
