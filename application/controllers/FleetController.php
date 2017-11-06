@@ -17,7 +17,8 @@ class FleetController extends Application
     */
     function index() 
     {
-        $this->data['title'] = 'Raven Air Fleet';
+        $role = $this->session->userdata('userrole');
+        $this->data['title'] = 'Raven Air Fleet ('. $role . ')';
         $this->data['pagebody'] = 'fleet';
         $airplanes = $this->fleet->all();
         $this->load->library('table');

@@ -13,7 +13,8 @@ class About extends Application
     }
 
     function index(){
-        $this->data['title'] = 'About Raven Airline';
+        $role = $this->session->userdata('userrole');
+        $this->data['title'] = 'About Raven Airline ('. $role . ')';
         $this->data['pagebody'] = 'about'; 
         $this->render();
     }
