@@ -1,0 +1,5 @@
+{
+    "case": "test budget limied $10M",
+    "budget_limit": "10000000",
+    "expected": true
+}

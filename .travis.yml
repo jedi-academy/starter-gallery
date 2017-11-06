@@ -1,0 +1,10 @@
+language: php
+php:
+  - 7.0
+braches:
+  only:
+    develop
+before_install:
+  - travis_retry composer self-update
+  - composer update
+script: phpunit
