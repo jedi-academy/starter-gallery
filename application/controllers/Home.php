@@ -16,7 +16,8 @@ class Home extends Application
     function index() 
     {
         $this->data['pagebody'] = 'home';
-        $this->data['title'] = 'Raven Airline';
+        $role = $this->session->userdata('userrole');
+        $this->data['title'] = 'Raven Airline ('. $role . ')';
         $this->data['fleet_count'] = $this->fleet->count();
         $this->data['flight_count'] = $this->flights->count();
         $this->data['airport_count'] = $this->airports->count();
