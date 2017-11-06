@@ -7,6 +7,21 @@ Team membership:
     - Junnan Tang <junnan.tang.2014@gmail.com>
     - Terra Hunter <ms.terra.h@gmail.com>
 
+## *Version 1.1.1
+### Description
+    - Added phpunit as the unit testing framework (Ryan) 
+    - Added tests for some business rules (Ryan) 
+### New Components
+    - /tests
+        - /data
+            - /business_rules 
+                - arrival_time_limit.json
+                - budget_limit.json
+                - departure_time_limit.json
+                - fly_interval_limit.json
+        - Bootstrap.php 
+        - BusinessRulesTest.php
+
 
 ## *Version 1.1* 
 ### Description
