@@ -9,3 +9,4 @@
 public/tmp/*
 /vendor/*
 /tests/report
+/data/*

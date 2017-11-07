@@ -7,6 +7,30 @@ Team membership:
     - Junnan Tang <junnan.tang.2014@gmail.com>
     - Terra Hunter <ms.terra.h@gmail.com>
 
+## *Version 1.1.2
+### Description
+    - changed model to CSV-persisted (Ryan)
+### new component 
+    - /application/
+        - core/
+            - CI_Model
+            - CSV_Model.php
+            - DataMapper.php
+            - Entity.php
+            - Memory_Model.php
+            - MY_Controller.php
+            - MY_Model.php
+            - RDB_Model.php
+
+    - /data/
+        - fleet.csv
+        - flights.csv
+        - airports.csv
+### modified components
+    - /application/
+        - controllers/
+            - all
+
 ## *Version 1.1.1
 ### Description
     - Added phpunit as the unit testing framework (Ryan) 
