@@ -1,8 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Flights extends CI_Model
+class Flights extends CSV_Model
 {
+    /*
     private static $uid = 0;
     var $data = array(
     '1'	 => array(
@@ -102,9 +103,11 @@ class Flights extends CI_Model
         'arrival_time' =>'21:30'
     )
     );
+     */
     // Constructor
     public function __construct()
     {
+        /*
             parent::__construct();
             // inject each "record" key into the record itself, for ease of presentation
             foreach ($this->data as $key => $record)
@@ -112,57 +115,67 @@ class Flights extends CI_Model
                     $record['key'] = $key;
                     $this->data[$key] = $record;
             }
+         */
+        parent::__construct(APPPATH . '../data/flights.csv', 'key');
     }
+    /*
     // retrieve a single quote, null if not found
     public function get($which)
     {
             return !isset($this->data[$which]) ? null : $this->data[$which];
     }
+     */
     // retrieve all of the quotes
-    public function all()
+    public function allAsArray()
     {
-            return $this->data;
+        //   return $this->data;
+        $flightsArray = array();
+
+        foreach ($this->all() as $flight)
+            $flightsArray[$flight->key] = (array)$flight;
+        return $flightsArray;
     }
 
     public function count()
     {
-        return count($this->data);
+        //return count($this->data);
+        return $this->size();
     }
     public function getFlight($id) {
-       foreach($this->data  as $flight) {
+        foreach($this->data  as $flight) {
             if ($flight['id'] == $id) {
                 return $flight;
             }            
         }
         return null;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //***WORK IN PROGRESS***///
     private function flightBuilder($origin, $dest, $fleet, $startTime) {
 
@@ -175,7 +188,7 @@ class Flights extends CI_Model
             'arrival_time' =>'10:30'
         );
         $uid++; 
-        
-        
+
+
     }
 }

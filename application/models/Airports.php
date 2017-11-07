@@ -74,7 +74,7 @@ class Airports extends CSV_Model
        return $this->size(); 
     }
 
-    public function allArray()
+    public function allAsArray()
     {
         $airportsArray = array();
 

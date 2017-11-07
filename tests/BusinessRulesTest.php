@@ -21,7 +21,7 @@ class BusinessRulesTest extends TestCase
 
         foreach ($fleet as $plane)
         {
-            $total += $plane['price'];
+            $total += $plane->price;
         }
 
         $this->assertEquals($expected, $total <= $bugetLimit);
@@ -36,7 +36,7 @@ class BusinessRulesTest extends TestCase
         $flights = $this->CI->flights->all();
         foreach ($flights as $flight) 
         {
-            $departureTime = strtotime(self::DAY . $flight['departure_time']);
+            $departureTime = strtotime(self::DAY . $flight->departure_time);
             $this->assertEquals($expected, $departureTime >= $timeLimit);
         }
     }
@@ -50,7 +50,7 @@ class BusinessRulesTest extends TestCase
         $flights = $this->CI->flights->all();
         foreach ($flights as $flight) 
         {
-            $arrivalTime = strtotime(self::DAY . $flight['arrival_time']);
+            $arrivalTime = strtotime(self::DAY . $flight->arrival_time);
             $this->assertEquals($expected, $arrivalTime <= $timeLimit);
         }
     }
@@ -64,10 +64,12 @@ class BusinessRulesTest extends TestCase
         usort($flights, "cmp_fleet");
         for ($i = 1; $i < sizeof($flights); ++$i)
         {
-            if ($flights[$i]['fleet_id'] == $flights[$i - 1]['fleet_id'])
+            $current = $flights[$i];
+            $previous = $flights[$i - 1];
+            if ($current->fleet_id == $previous->fleet_id)
             {
-               $departureTime = strtotime(self::DAY . $flights[$i]['departure_time']);
-               $previousArrivalTime = strtotime(self::DAY . $flights[$i - 1]['arrival_time']);
+               $departureTime = strtotime(self::DAY . $current->departure_time);
+               $previousArrivalTime = strtotime(self::DAY . $previous->arrival_time);
                $interval = $departureTime - $previousArrivalTime;
                $this->assertEquals($expected, $interval >= $intervalLimit * self::SECONDS_IN_MINUTE);
             }
@@ -122,11 +124,11 @@ class BusinessRulesTest extends TestCase
 /* A function for usort the flights */
 function cmp_fleet($a, $b)
 {
-    $cmpFleetId = strcmp($a['fleet_id'], $b['fleet_id']);
+    $cmpFleetId = strcmp($a->fleet_id, $b->fleet_id);
 
     if ($cmpFleetId == 0)
     {
-        return strcmp($a['departure_time'], $b['departure_time']);
+        return strcmp($a->departure_time, $b->departure_time);
     } 
     return $cmpFleetId;
 }

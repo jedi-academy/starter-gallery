@@ -26,6 +26,7 @@ class FleetController extends Application
         $this->table->set_heading('Fleet ID', 'Plane ID');
         foreach($airplanes as $airplane) 
         {
+            $airplane = (array)$airplane;
             $link_data = array(
                 'display' => $airplane['id'],
                 'url' => '/fleet/'. $airplane['id']

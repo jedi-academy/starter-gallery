@@ -1,7 +1,8 @@
 <?php
-class Fleet extends CI_Model
+class Fleet extends CSV_Model 
 {
     
+    /*
     var $data = array
         (
             '1' => array(
@@ -54,9 +55,11 @@ class Fleet extends CI_Model
             )
         );
 
+     */
     // Constructor
     public function __construct()
     {
+        /*
         parent::__construct();
         // inject each "record" key into the record itself, for ease of presentation
         foreach ($this->data as $key => $record)
@@ -64,7 +67,11 @@ class Fleet extends CI_Model
             $record['key'] = $key;
             $this->data[$key] = $record;
         }
+         */
+        parent::__construct(APPPATH . '../data/fleet.csv', 'key');
     }
+
+    /*
     // retrieve a single quote, null if not found
     public function get($which)
     {
@@ -79,14 +86,21 @@ class Fleet extends CI_Model
         }
         return null;
     }
+     */
     // retrieve all of the quotes
-    public function all()
+    
+    public function allAsArray()
     {
-        return $this->data;
+        $fleetArray = array();
+        foreach ($this->all() as $plane)
+           $fleetArray[$plane->key] = (array)$plane;
+        return $fleetArray;
     }
+
     public function count()
     {
-        return count($this->data);
+        //return count($this->data);
+        return $this->size();
     }
 
 }

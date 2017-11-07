@@ -11,22 +11,29 @@ class ExportCsvTest extends TestCase
 
     public function testEchoAirportCsv()
     {
-        $airports = $this->CI->airports->all();
-        $first = $airports[1];
-        //var_dump($first);
-        echo "\n";
-        foreach ($first as $key => $value)
-        {
-            echo $key . ","; 
-        }
-        echo "\n";
+        $modelNames=array(
+            "airports","fleet","flights"
+        );
 
-
-        foreach ($airports as $airport) 
+        foreach ($modelNames as $model)
         {
-            foreach ($airport as $key => $value)
+            $objects = $this->CI->$model->all();
+            $first = $objects[1];
+            //var_dump($first);
+            echo "\n";
+            foreach ($first as $key => $value)
             {
-                echo "\"" .  $value . "\"" . ",";
+                echo $key . ","; 
+            }
+            echo "\n";
+
+            foreach ($objects as $object) 
+            {
+                foreach ($object as $key => $value)
+                {
+                    echo "\"" .  $value . "\"" . ",";
+                }
+                echo "\n";
             }
             echo "\n";
         }
