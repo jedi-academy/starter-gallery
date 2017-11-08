@@ -7,6 +7,23 @@ Team membership:
     - Junnan Tang <junnan.tang.2014@gmail.com>
     - Terra Hunter <ms.terra.h@gmail.com>
 
+## *Version 1.1.3
+### Description
+    - optimized csv data and models to fit the CSV model better (Ryan)
+    - fixed the crashed links to details of plane and flight. 
+### modified components
+    - /application/
+        - core/
+            - Memery_Model.php
+    - /data/
+        - fleet.csv
+        - flights.csv
+        - airports.csv
+    - /models/
+        - Airports.php
+        - Fleet.php
+        - Flights.php
+
 ## *Version 1.1.2
 ### Description
     - changed model to CSV-persisted (Ryan)
