@@ -25,7 +25,7 @@ class FlightsController extends Application
         $this->data['pagebody'] = 'flights';
         
         // Building the list of flights to pass to our view
-        $flights = $this->flights->allAsArray();
+        $flights = $this->flights->toArray();
         
         
         $this->load->library('table');

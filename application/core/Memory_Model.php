@@ -222,4 +222,18 @@ class Memory_Model extends CI_Model implements DataMapper
 		$this->_data = array();
 		;
 	}
+
+    // return all the data with attributes as array 
+    function toArray()
+    {
+        $records = array();
+        foreach ($this->all() as $record)
+        {
+            $attributes = array();
+            foreach ($record as $key => $value) 
+                $attributes[$key] = $value; 
+            array_push($records, $attributes);  
+        }
+        return $records;
+    }
 }

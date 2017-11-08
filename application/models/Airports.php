@@ -56,7 +56,7 @@ class Airports extends CSV_Model
         }
          */
         
-        parent::__construct(APPPATH . '../data/airports.csv', 'key');
+        parent::__construct(APPPATH . '../data/airports.csv', 'id');
     }
 
     /*
@@ -79,10 +79,11 @@ class Airports extends CSV_Model
         $airportsArray = array();
 
         foreach ($this->all() as $airport)
-           $airportsArray[$airport->key] = (array)$airport;
+           $airportsArray[$airport->id] = (array)$airport;
        return $airportsArray;
     }
 
+    /*
     public function getAirport($id) {
         foreach($this->all() as $airport) {
             if ($airport['id'] == $id) {
@@ -91,4 +92,5 @@ class Airports extends CSV_Model
         }
         return null;
     }
+     */
 }

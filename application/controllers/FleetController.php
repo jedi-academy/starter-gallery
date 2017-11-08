@@ -48,9 +48,9 @@ class FleetController extends Application
     */
     function show_fleet($id) 
     {
-        $plane = $this->fleet->getPlane($id);
+        $plane = $this->fleet->get($id);
         
-        $this->data['title'] = 'Raven Air Fleet: ' . $plane['id'];
+        $this->data['title'] = 'Raven Air Fleet: ' . $plane->id;
         $this->data['pagebody'] = 'fleet';
 
         $this->load->library('table');

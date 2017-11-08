@@ -116,7 +116,7 @@ class Flights extends CSV_Model
                     $this->data[$key] = $record;
             }
          */
-        parent::__construct(APPPATH . '../data/flights.csv', 'key');
+        parent::__construct(APPPATH . '../data/flights.csv', 'id');
     }
     /*
     // retrieve a single quote, null if not found
