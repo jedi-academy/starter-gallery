@@ -204,8 +204,16 @@ class Memory_Model extends CI_Model implements DataMapper
 	// Retrieve first record from a table.
 	function first()
 	{
-		return $this->_data[0];
+		//return $this->_data[0];
+        
+        return current($this->_data);
 	}
+
+    function last()
+    {
+        return end($this->_data);
+    }
+
 	// Retrieve records from the beginning of a table.
 	function head($count = 10)
 	{

@@ -15,11 +15,14 @@ class ExportCsvTest extends TestCase
             "airports","fleet","flights"
         );
 
+
+        echo "\n";
         foreach ($modelNames as $model)
         {
+            echo $model . ":\n";
             $first = $this->CI->$model->first();
 
-            foreach ($fisrt as $key => $value)
+            foreach ($first as $key => $value)
                 echo $key . ",";
             echo "\n";
             

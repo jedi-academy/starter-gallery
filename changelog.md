@@ -10,7 +10,8 @@ Team membership:
 ## *Version 1.1.3
 ### Description
     - optimized csv data and models to fit the CSV model better (Ryan)
-    - fixed the crashed links to details of plane and flight. 
+    - fixed the crashed links to details of plane and flight (Ryan)
+    - modified first() and last() method in Memory_Model adapt to associate arrays (Ryan)
 ### modified components
     - /application/
         - core/
