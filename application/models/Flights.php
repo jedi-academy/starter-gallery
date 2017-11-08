@@ -141,6 +141,7 @@ class Flights extends CSV_Model
         //return count($this->data);
         return $this->size();
     }
+    /*
     public function getFlight($id) {
         foreach($this->data  as $flight) {
             if ($flight['id'] == $id) {
@@ -149,6 +150,7 @@ class Flights extends CSV_Model
         }
         return null;
     }
+     */
 
 
 
