@@ -204,8 +204,16 @@ class Memory_Model extends CI_Model implements DataMapper
 	// Retrieve first record from a table.
 	function first()
 	{
-		return $this->_data[0];
+		//return $this->_data[0];
+        
+        return current($this->_data);
 	}
+
+    function last()
+    {
+        return end($this->_data);
+    }
+
 	// Retrieve records from the beginning of a table.
 	function head($count = 10)
 	{
@@ -222,4 +230,18 @@ class Memory_Model extends CI_Model implements DataMapper
 		$this->_data = array();
 		;
 	}
+
+    // return all the data with attributes as array 
+    function toArray()
+    {
+        $records = array();
+        foreach ($this->all() as $record)
+        {
+            $attributes = array();
+            foreach ($record as $key => $value) 
+                $attributes[$key] = $value; 
+            array_push($records, $attributes);  
+        }
+        return $records;
+    }
 }

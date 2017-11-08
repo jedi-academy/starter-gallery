@@ -68,7 +68,7 @@ class Fleet extends CSV_Model
             $this->data[$key] = $record;
         }
          */
-        parent::__construct(APPPATH . '../data/fleet.csv', 'key');
+        parent::__construct(APPPATH . '../data/fleet.csv', 'id');
     }
 
     /*
@@ -93,10 +93,13 @@ class Fleet extends CSV_Model
     {
         $fleetArray = array();
         foreach ($this->all() as $plane)
-           $fleetArray[$plane->key] = (array)$plane;
+           $fleetArray[$plane->id] = (array)$plane;
         return $fleetArray;
     }
 
+    /**
+     * This function is not needed, use size() instead
+     */
     public function count()
     {
         //return count($this->data);
