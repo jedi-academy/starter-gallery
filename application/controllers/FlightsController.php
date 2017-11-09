@@ -21,7 +21,7 @@ class FlightsController extends Application
     {
         // This is the view we want shown
         $role = $this->session->userdata('userrole');
-        $this->data['title'] = 'Raven Air Flights ('. $role . ')';
+        $this->data['title'] = 'Raven Air Flights ('. ($role == '' ? ROLE_GUEST : $role) . ')';
         $this->data['pagebody'] = 'flights';
         
         // Building the list of flights to pass to our view
@@ -76,8 +76,9 @@ class FlightsController extends Application
         // Geting the particular flight's details to pass to our view
         $flight = $this->flights->get($id);
         
-        //This is the view we want shown
-        $this->data['title'] = 'Raven Air Flight: ' . $flight->id;
+        $role = $this->session->userdata('userrole');
+        $this->data['title'] = 'Raven Air Flights ('. ($role == '' ? ROLE_GUEST : $role) . ') ' . $flight->id;
+        
         $this->data['pagebody'] = 'flights';
 
         $this->load->library('table');  

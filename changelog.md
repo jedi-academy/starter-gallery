@@ -7,6 +7,36 @@ Team membership:
     - Junnan Tang <junnan.tang.2014@gmail.com>
     - Terra Hunter <ms.terra.h@gmail.com>
 
+
+
+## *Version 1.2
+### Description
+    - Main part of this update, is to enable the fleet page to update the database. (Terra)
+    - Fleet page can update/add/delete fleet items. (Terra)
+    - Roles were polished. (Terra)
+    - I also added the skeleton for fleet validation rules. (Terra)
+    - Updated controllers to display role name better (Terra)
+    - Enabled some basic logging of PHP messages. (Terra)
+### Updated components
+    - config.php
+    - routes.php
+    - Controllers
+        - About.php
+        - FleetController.php (Major changes here)
+        - FlightsController.php
+        - Home.php
+    - Models
+        - Fleet.php (Major changes here)
+    - Views
+        - fleet.php
+        
+### New Components
+    application/logs/log-XXXX-XX-XX.php (php log messages)
+    - Views
+        - template/_delete.php
+    
+
+
 ## *Version 1.1.3
 ### Description
     - optimized csv data and models to fit the CSV model better (Ryan)
@@ -70,10 +100,16 @@ Team membership:
     - Fixed missing bootstrap problem (Terra)
     - Fixed navbar (Terra)
     - Added user roles and sessions for them (Terra)
+    - Displayed Roles in the page titles (Terra)
 ### Updated components
     - config.php
     - autoload.php
     - constants.php
+    - Controllers
+        - About.php
+        - FleetController.php
+        - FlightsController.php
+        - Home.php
     - Views
         - template/_menubar.php
         - template/template.php

@@ -14,7 +14,7 @@ class About extends Application
 
     function index(){
         $role = $this->session->userdata('userrole');
-        $this->data['title'] = 'About Raven Airline ('. $role . ')';
+        $this->data['title'] = 'About Raven Airline ('. ($role == '' ? ROLE_GUEST : $role) . ')';
         $this->data['pagebody'] = 'about'; 
         $this->render();
     }

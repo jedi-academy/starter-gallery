@@ -14,10 +14,10 @@ class Home extends Application
     *and display the home page
     */
     function index() 
-    {
+    {                               
         $this->data['pagebody'] = 'home';
         $role = $this->session->userdata('userrole');
-        $this->data['title'] = 'Raven Airline ('. $role . ')';
+        $this->data['title'] = 'Raven Airline ('. ($role == '' ? ROLE_GUEST : $role) . ')';
         $this->data['fleet_count'] = $this->fleet->count();
         $this->data['flight_count'] = $this->flights->count();
         $this->data['airport_count'] = $this->airports->count();
@@ -37,5 +37,9 @@ class Home extends Application
          $this->data['airport_list'] = $airport_list;
         
         $this->render();
+    }
+    
+    function show_404(){
+        $this->load->view("/errors/cli/error_404");
     }
 }
