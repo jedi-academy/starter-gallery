@@ -1,0 +1,13 @@
+id,fleet_id,departure_airport_id,departure_time,arrival_airport_id,arrival_time
+"RI183","baron","YXS","09:30","YPR","10:30"
+"RI189","baron","YPR","13:30","YDQ","15:00"
+"RI196","baron","YDQ","16:15","YXS","17:30"
+"RI248","mustang","YXS","11:00","YDQ","12:15"
+"RI257","mustang","YDQ","13:00","YVR","15:00"
+"RI289","mustang","YVR","17:30","YXS","18:55"
+"RI315","pc12ng","YXS","08:00","YVR","09:25"
+"RI329","pc12ng","YVR","11:30","YPR","12:45"
+"RI333","pc12ng","YPR","13:30","YDQ","15:00"
+"RI392","pc12ng","YDQ","19:30","YXS","20:45"
+"RI408","REOM3239","YXS","14:00","YPR","15:00"
+"RI473","REOM3239","YPR","20:30","YXS","21:30"

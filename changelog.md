@@ -7,9 +7,62 @@ Team membership:
     - Junnan Tang <junnan.tang.2014@gmail.com>
     - Terra Hunter <ms.terra.h@gmail.com>
 
-Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
+## *Version 1.1.3
+### Description
+    - optimized csv data and models to fit the CSV model better (Ryan)
+    - fixed the crashed links to details of plane and flight (Ryan)
+    - modified first() and last() method in Memory_Model adapt to associate arrays (Ryan)
+### modified components
+    - /application/
+        - core/
+            - Memery_Model.php
+    - /data/
+        - fleet.csv
+        - flights.csv
+        - airports.csv
+    - /models/
+        - Airports.php
+        - Fleet.php
+        - Flights.php
 
+## *Version 1.1.2
+### Description
+    - changed model to CSV-persisted (Ryan)
+### new component 
+    - /application/
+        - core/
+            - CI_Model
+            - CSV_Model.php
+            - DataMapper.php
+            - Entity.php
+            - Memory_Model.php
+            - MY_Controller.php
+            - MY_Model.php
+            - RDB_Model.php
 
+    - /data/
+        - fleet.csv
+        - flights.csv
+        - airports.csv
+### modified components
+    - /application/
+        - controllers/
+            - all
+
+## *Version 1.1.1
+### Description
+    - Added phpunit as the unit testing framework (Ryan) 
+    - Added tests for some business rules (Ryan) 
+### New Components
+    - /tests
+        - /data
+            - /business_rules 
+                - arrival_time_limit.json
+                - budget_limit.json
+                - departure_time_limit.json
+                - fly_interval_limit.json
+        - Bootstrap.php 
+        - BusinessRulesTest.php
 
 
 ## *Version 1.1* 
@@ -45,6 +98,7 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 
 
 ## *Version 1.0*
+>>>>>>> 5cb4075a2f8edbc4c3d5536ea7ff97360382886c
 ### Description
     - Updated a few things on the home page
     - Fixed nabar and footer

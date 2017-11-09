@@ -26,6 +26,7 @@ class FleetController extends Application
         $this->table->set_heading('Fleet ID', 'Plane ID');
         foreach($airplanes as $airplane) 
         {
+            $airplane = (array)$airplane;
             $link_data = array(
                 'display' => $airplane['id'],
                 'url' => '/fleet/'. $airplane['id']
@@ -68,6 +69,7 @@ class FleetController extends Application
         $this->load->helper('form');
         $role = $this->session->userdata('userrole');
         $this->data['title'] = 'Raven Air Fleet: ';
+
         $this->data['pagebody'] = 'fleet';
         $this->load->library('table');       
         $fleettmp = $this->fleet->getPlane($id);

@@ -1,0 +1,5 @@
+id,community,airport,region,coordinates,runway,airline
+"YXS","Prince George","Prince George Airport","7","53\u00b053\u203203\u2033N122\u00b040\u203239\u2033W","3490","raven"
+"YPR","Prince Rupert","Prince Rupert Airport","6","54\u00b017\u203210\u2033N130\u00b026\u203241\u2033W","1829","kite"
+"YDQ","Dawson Creek","Dawson Creek Airport","9","55\u00b044\u203232\u2033N120\u00b010\u203259\u2033W","1524","eagle"
+"YVR","Vancouver","Vancouver International Airport","2","49\u00b011\u203241\u2033N123\u00b011\u203202\u2033W","3505","pelican"

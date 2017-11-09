@@ -15,7 +15,7 @@ class Info extends  Application
     */
     function fleet()
     {
-        $airplanes = $this->fleet->all();
+        $airplanes = $this->fleet->toArray();
         echo json_encode($airplanes); 
     }
 
@@ -23,7 +23,7 @@ class Info extends  Application
     * Show fleet infomation as json formate
     */
     function show_fleet($id) {
-        $plane = $this->fleet->getPlane($id);     
+        $plane = $this->fleet->get($id);     
         echo json_encode($plane);
     }
 
@@ -32,7 +32,7 @@ class Info extends  Application
     */
     function flights()
     {
-        $flights = $this->flights->all();
+        $flights = $this->flights->toArray();
         echo json_encode($flights);
     }
 
@@ -40,7 +40,7 @@ class Info extends  Application
     * Show flight infomation as json formate
     */
     function show_flight($id) {
-        $flight = $this->flights->getFlight($id);
+        $flight = $this->flights->get($id);
         echo json_encode($flight);
     }
 

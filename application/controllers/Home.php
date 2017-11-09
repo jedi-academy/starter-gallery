@@ -22,7 +22,7 @@ class Home extends Application
         $this->data['flight_count'] = $this->flights->count();
         $this->data['airport_count'] = $this->airports->count();
         
-        $airports = $this->airports->all();
+        $airports = $this->airports->toArray();
         $airport_list = '';
         $counter = 0;
         foreach($airports as $port) 
@@ -36,8 +36,6 @@ class Home extends Application
         }
          $this->data['airport_list'] = $airport_list;
         
-
         $this->render();
-
     }
 }
