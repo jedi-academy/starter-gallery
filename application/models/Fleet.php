@@ -2,6 +2,7 @@
 class Fleet extends CI_Model
 {
     
+
     var $data = array
         (
             '1' => array(
@@ -65,6 +66,41 @@ class Fleet extends CI_Model
             $this->data[$key] = $record;
         }
     }
+    
+    
+
+
+    public function add($fleet)
+    {
+        
+       array_push($this->data, $fleet);
+        // inject each "record" key into the record itself, for ease of presentation
+        foreach ($this->data as $key => $record)
+        {
+            $record['key'] = $key;
+            $this->data[$key] = $record;
+        }
+    }
+    
+    public function update($fleet)
+    {
+        $found = 0;
+        foreach($this->data  as $datafleet) {
+            if ($datafleet['id'] == $fleet['id']) {
+                $datafleet = $fleet;
+                $found = 1;
+            }
+        }
+        if (found == 0) {
+            add($fleet);
+        }
+    }
+
+    
+    
+    
+    
+    
     // retrieve a single quote, null if not found
     public function get($which)
     {

@@ -17,10 +17,16 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
     - Fixed missing bootstrap problem (Terra)
     - Fixed navbar (Terra)
     - Added user roles and sessions for them (Terra)
+    - Displayed Roles in the page titles (Terra)
 ### Updated components
     - config.php
     - autoload.php
     - constants.php
+    - Controllers
+        - About.php
+        - FleetController.php
+        - FlightsController.php
+        - Home.php
     - Views
         - template/_menubar.php
         - template/template.php
