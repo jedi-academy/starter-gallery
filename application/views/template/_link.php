@@ -1,1 +1,1 @@
-<a href={url}>{display} </a>
+<a class="{classes}" href={url}>{display} </a>
