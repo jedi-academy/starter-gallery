@@ -1,5 +1,5 @@
 id,plane_id,model,price,seats,reach,cruise,takeoff,hourly
-"pc12ng","Pilatus","PC-12 NG","3300","9","4147","500","450","727"
-"mustang","Cessna","Citation Mustang","2770","4","2130","630","950","1015"
-"baron","Beechcraft","Baron","1350","4","1948","373","701","340"
-"REOM3239","caravan","Grand Caravan EX","2300","14","1689","340","660","389"
+REOM3239,caravanbfsx12,"Grand Caravan EX",2300,14,1689,340,660,38932423
+baron,Beechcraft,Baronewf,1350,4,1948,373,701,340
+mustang,Cessna,"Citation Mustang",2770,4,2130,630,950,1015
+new,new,new,asfasf,safdssdga,sad,sad,sad,sad

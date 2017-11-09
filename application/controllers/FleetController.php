@@ -18,21 +18,29 @@ class FleetController extends Application
     function index() 
     {
         $role = $this->session->userdata('userrole');
-        $this->data['title'] = 'Raven Air Fleet ('. $role . ')';
+        $this->data['title'] = 'Raven Air Fleet ('. ($role == '' ? ROLE_GUEST : $role) . ')';
         $this->data['pagebody'] = 'fleet';
-        $airplanes = $this->fleet->all();
+        $fleets = $this->fleet->all();
         $this->load->library('table');
 
         $this->table->set_heading('Fleet ID', 'Plane ID');
-        foreach($airplanes as $airplane) 
+        foreach($fleets as $fleet) 
         {
-            $airplane = (array)$airplane;
+            $fleet = (array)$fleet;
             $link_data = array(
-                'display' => $airplane['id'],
-                'url' => '/fleet/'. $airplane['id']
+                'display' => $fleet['id'],
+                'url' => '/fleet/'. $fleet['id']
             );
+            $delete_data = array(
+                'display' => 'X',
+                'url' => '/fleet/'. $fleet['id'] . '/delete'
+            );
+            $delete = '';
+            if ($role == ROLE_OWNER) { 
+                $delete = $this->parser->parse('template/_delete', $delete_data, true);
+            }
             $link = $this->parser->parse('template/_link', $link_data, true);
-            $this->table->add_row($link, $airplane['plane_id']);
+            $this->table->add_row($delete . $link, $fleet['plane_id']);
         }
         $template = array(
             'table_open' => '<table border="1" cellpadding="2" cellspacing="1" class="table">'
@@ -51,12 +59,36 @@ class FleetController extends Application
         $this->render();
     }
     
+    
+    /**
+     * Remove a fleet from the database.
+     */
+    function delete($id) 
+    {
+        $role = $this->session->userdata('userrole');
+        if ($role == ROLE_OWNER) {
+            $fleet = $this->fleet->getFleet($id);  
+            if ($fleet != NULL) {
+                $this->fleet->delete($id);
+            }
+        }
+        redirect(base_url('/fleet'));
+    }
+    
+    
+    
+    
+    
+    
     // Initiate adding a new fleet
     public function add()
     {
-        $task = $this->fleet->create();
-        $this->show_fleet(NULL);
-        
+        $role = $this->session->userdata('userrole');
+        if ($role == ROLE_OWNER) {
+            $task = $this->tasks->create();
+            $this->session->set_userdata('task', $task);           
+        }
+        redirect(base_url('/fleet/add'));
     }
     
     
@@ -68,33 +100,40 @@ class FleetController extends Application
     {
         $this->load->helper('form');
         $role = $this->session->userdata('userrole');
-        $this->data['title'] = 'Raven Air Fleet: ';
-
+        $this->data['title'] = 'Raven Air Fleet ('. ($role == '' ? ROLE_GUEST : $role) . ') ';
         $this->data['pagebody'] = 'fleet';
-        $this->load->library('table');       
-        $fleettmp = $this->fleet->getPlane($id);
-        
-        
-        
-      //  if ($id != NULL) {
-     //       $fleet = $this->fleet->getPlane($id);
-    //        $this->data['title'] .= $fleet['id']; 
-    //    } 
-        $this->session->set_userdata('fleet', $fleettmp);
+        $this->load->library('table');
+        $this->data['jsonbutton'] = '';
+        if ($id != 'add') {
+            $fleettmp = $this->fleet->getFleet($id);
+            if ($fleettmp != NULL) {
+                $this->session->set_userdata('fleet', $fleettmp);
+                $this->data['title'] .= $fleettmp['id']; 
+                $this->data['jsonbutton'] = '<a class="btn btn-default" href="/info/fleet/' . $id . '" target="_blank"> Show JSON </a>';
+            } else {
+                if ($role != ROLE_OWNER) {
+                    redirect(base_url('/fleet'));
+                }
+            }
+        } else {
+            if ($role != ROLE_OWNER) {
+                    redirect(base_url('/fleet'));
+            }
+        }
         $fleet = $this->session->userdata('fleet');
-        $this->data['title'] = $fleet['id'];
+        
         
        
          if ($role == ROLE_OWNER) { 
-                $this->table->add_row('Fleet Id', form_input('fleet', $fleet['id']));
-                $this->table->add_row('Plane Id', form_input('fleet', $fleet['plane_id']));
-                $this->table->add_row('Model', form_input('fleet', $fleet['model']));
-                $this->table->add_row('Price', form_input('fleet', $fleet['price']));
-                $this->table->add_row('Seats', form_input('fleet', $fleet['seats']));
-                $this->table->add_row('Reach', form_input('fleet', $fleet['reach']));
-                $this->table->add_row('Cruise', form_input('fleet', $fleet['cruise']));
-                $this->table->add_row('Takeoff', form_input('fleet', $fleet['takeoff']));
-                $this->table->add_row('Hourly', form_input('fleet', $fleet['hourly']));
+                $this->table->add_row('Fleet Id', form_input('id', $fleet['id']));
+                $this->table->add_row('Plane Id', form_input('plane_id', $fleet['plane_id']));
+                $this->table->add_row('Model', form_input('model', $fleet['model']));
+                $this->table->add_row('Price', form_input('price', $fleet['price']));
+                $this->table->add_row('Seats', form_input('seats', $fleet['seats']));
+                $this->table->add_row('Reach', form_input('reach', $fleet['reach']));
+                $this->table->add_row('Cruise', form_input('cruise', $fleet['cruise']));
+                $this->table->add_row('Takeoff', form_input('takeoff', $fleet['takeoff']));
+                $this->table->add_row('Hourly', form_input('hourly', $fleet['hourly']));
                 $this->table->add_row(form_submit('submit', 'Submit'));
                 
         } else {
@@ -115,7 +154,7 @@ class FleetController extends Application
         );
         $this->table->set_template($template);
         $this->data['thetable'] = $this->table->generate();
-        $this->data['jsonbutton'] = '<a class="btn btn-default" href="/info/fleet/' . $id . '" target="_blank"> Show JSON </a>';
+       
         $this->render();
 
     }
@@ -124,8 +163,8 @@ class FleetController extends Application
     public function submit()
     {
         // setup for validation
-      //  $this->load->library('form_validation');
-       // $this->form_validation->set_rules($this->tasks->rules());
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules($this->fleet->rules());
 
         // retrieve & update data transfer buffer
         $fleet = (array) $this->session->userdata('fleet');
@@ -134,27 +173,22 @@ class FleetController extends Application
         $this->session->set_userdata('fleet', (object) $fleet);
 
         // validate away
-      /*  if ($this->form_validation->run())
+        if ($this->form_validation->run())
         {
-            if (empty($task->id))
-            {
-                                $task->id = $this->tasks->highest() + 1;
-                $this->tasks->add($task);
-                $this->alert('Task ' . $task->id . ' added', 'success');
-            } else
-            {
-                $this->tasks->update($task);
-                $this->alert('Task ' . $task->id . ' updated', 'success');
+            if ($this->fleet->getFleet($fleet->id) == NULL)
+           {
+               
+                $this->fleet->add($fleet);
+            } else {
+                $this->fleet->update($fleet);
             }
-        } else
-        {
-            $this->alert('<strong>Validation errors!<strong><br>' . validation_errors(), 'danger');
-        }
-       */
-        if (empty($task->id)) {
-            $this->fleet->add($fleet);
         } else {
-            $this->fleet->update($fleet);
+            error_log("Validation failed: " . validation_errors());
         }
+       
+    
+        redirect(base_url('/fleet'));
     }
+
+    
 }
