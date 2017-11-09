@@ -85,10 +85,14 @@ class FleetController extends Application
     {
         $role = $this->session->userdata('userrole');
         if ($role == ROLE_OWNER) {
-            $task = $this->tasks->create();
-            $this->session->set_userdata('task', $task);           
+            $fleet = $this->fleet->create();
+            $this->session->unset_userdata('fleet');
+            $this->session->set_userdata('fleet', $fleet);   // This is required to avoid having data auto filled with old session data...
+            redirect(base_url('/fleet/add'));
+        } else {
+             redirect(base_url('/fleet'));
         }
-        redirect(base_url('/fleet/add'));
+        
     }
     
     
@@ -99,6 +103,7 @@ class FleetController extends Application
     function show_fleet($id) 
     {
         $this->load->helper('form');
+        $this->session->unset_userdata('fleet'); // This is required to avoid having data auto filled with old session data...
         $role = $this->session->userdata('userrole');
         $this->data['title'] = 'Raven Air Fleet ('. ($role == '' ? ROLE_GUEST : $role) . ') ';
         $this->data['pagebody'] = 'fleet';
