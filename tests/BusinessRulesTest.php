@@ -16,7 +16,7 @@ class BusinessRulesTest extends TestCase
      */
     public function testBudgetLimit($bugetLimit, $expected)
     {
-        $fleet = $this->CI->fleet->all();
+        $fleet = $this->CI->fleets->all();
         $total = 0;
 
         foreach ($fleet as $plane)

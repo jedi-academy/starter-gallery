@@ -37,4 +37,13 @@ class Application extends CI_Controller
         $this->parser->parse('template/'.$template, $this->data);
     }
 
+    public function is_admin() 
+    {
+        return $this->role() == ROLE_ADMIN; 
+    }
+
+    public function role() 
+    {
+        return $role = isset($this->session->userdata['userrole']) ? $this->session->userdata['userrole'] : '';
+    }
 }

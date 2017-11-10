@@ -14,12 +14,12 @@
                                 <i class="fa fa-send fa-5x"></i>
                             </div>
                             <div class="col-xs-9 text-right">
-                                <div class="huge">3</div>
+                                <div class="huge">{fleet_count}</div>
                                 <div>Active Airlines</div>
                             </div>
                         </div>
                     </div>
-                    <a href="/info/fleet">
+                    <a href="/fleet">
                         <div class="panel-footer">
                             <span class="pull-left">{fleet_count} airlines licensed</span>
                             <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -43,7 +43,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="info/flights">
+                    <a href="/flights">
                         <div class="panel-footer">
                             <span class="pull-left">View Details</span>
                             <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

@@ -13,6 +13,14 @@ $(document).ready(function(){
 function getPlane(planeId) {
     var url = "/wacky/plane/" + planeId;
     $.getJSON(url, function(data){
+        for (var key in data) {
+            if (key == 'id')
+                continue;
+            $('#'+key).val(data[key]); 
+        }
+
+        /*
+        $('#manufacturer').val(data.manufacturer);
         $('#model').val(data.model);
         $('#price').val(data.price);
         $('#seats').val(data.seats);
@@ -20,6 +28,7 @@ function getPlane(planeId) {
         $('#cruise').val(data.cruise);
         $('#takeoff').val(data.takeoff);
         $('#hourly').val(data.hourly);
+        */
     });
     /*
     $.get(url, function(data, status){

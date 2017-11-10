@@ -1,0 +1,5 @@
+id,plane_id,manufacturer,model,price,seats,reach,cruise,takeoff,hourly
+RE3239,caravan,Cessna,"Grand Caravan EX",2300,14,1689,340,660,389
+RE4231,baron,Beechcraft,Baron,1350,4,1948,373,701,340
+RE5328,mustang,Cessna,"Citation Mustang",2770,4,2130,630,950,1015
+
