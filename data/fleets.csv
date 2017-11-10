@@ -1,0 +1,5 @@
+id,plane_id,manufacturer,model,price,seats,reach,cruise,takeoff,hourly
+RE3239,avanti,Piaggo,"Avanti II",7195,8,2797,589,994,977
+RE4237,pc12ng,Pilatus,"PC-12 NG",3300,9,4147,500,450,727
+RE5328,mustang,Cessna,"Citation Mustang",2770,4,2130,630,950,1015
+RE6531,baron,Beechcraft,Baron,1350,4,1948,373,701,340

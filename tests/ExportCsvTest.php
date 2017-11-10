@@ -12,7 +12,7 @@ class ExportCsvTest extends TestCase
     public function testEchoAirportCsv()
     {
         $modelNames=array(
-            "airports","fleet","flights"
+            "airports","fleets","flights"
         );
 
 

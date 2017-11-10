@@ -18,9 +18,9 @@ class Home extends Application
         $this->data['pagebody'] = 'home';
         $role = $this->session->userdata('userrole');
         $this->data['title'] = 'Raven Airline ('. ($role == '' ? ROLE_GUEST : $role) . ')';
-        $this->data['fleet_count'] = $this->fleet->count();
-        $this->data['flight_count'] = $this->flights->count();
-        $this->data['airport_count'] = $this->airports->count();
+        $this->data['fleet_count'] = $this->fleets->size();
+        $this->data['flight_count'] = $this->flights->size();
+        $this->data['airport_count'] = $this->airports->size();
         
         $airports = $this->airports->toArray();
         $airport_list = '';

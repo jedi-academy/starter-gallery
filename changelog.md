@@ -8,6 +8,23 @@ Team membership:
     - Terra Hunter <ms.terra.h@gmail.com>
 
 
+## *Version 1.2.1
+### Description
+    - re-organized the routing and pages in adding/modifying fleet. (Ryan)
+    - eliminate unnecessary methods from the mock-up hard-coded data
+    - added javascript to make form input user-friendly 
+
+### Updated components
+    - Controllers
+        - Home.php
+        - FleetController.php (Major changes here)
+    - Models
+        - Fleet.php changed to Fleets.php. the prural one is the collection model, the sigular is the entity model.
+    - Data
+        - updated csv files, and set the files to be git update assume-unchanged 
+
+### New Components
+    - public/js/fleets.js
 
 ## *Version 1.2
 ### Description
@@ -128,7 +145,6 @@ Team membership:
 
 
 ## *Version 1.0*
->>>>>>> 5cb4075a2f8edbc4c3d5536ea7ff97360382886c
 ### Description
     - Updated a few things on the home page
     - Fixed nabar and footer
