@@ -145,7 +145,6 @@ Team membership:
 
 
 ## *Version 1.0*
->>>>>>> 5cb4075a2f8edbc4c3d5536ea7ff97360382886c
 ### Description
     - Updated a few things on the home page
     - Fixed nabar and footer
