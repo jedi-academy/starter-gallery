@@ -1,0 +1,5 @@
+{
+    "case": "test no departure time earliear than limit",
+    "departure_time_limit": "08:00",
+    "expected": true
+}
