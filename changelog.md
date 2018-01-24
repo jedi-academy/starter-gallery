@@ -14,5 +14,5 @@ Release Date: Jul 26, 2027
  - Create 3 views : welcome.php, gallery.php and about.php - RT
 
 ## Updated Components
-
-
+ - Update the controllers and views so they use the template - NC
+ - Removed the .html files in the public - NC
