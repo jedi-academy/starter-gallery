@@ -10,16 +10,15 @@ Release Date: Jan 23, 2018
 
 ## New Components
 
--   controllers
 
-    -   About
-    -   Gallery
-    -   Welcome
+    
+## Updated Components
+-   controllers
 
 -   views
 
-    -   gallery.php
-    -   about.php
-    -   welcome.php
-    
-## Updated Components
+    -gallery.php
+    -about.php
+    -welcome.php
+    -template.php
+ 
