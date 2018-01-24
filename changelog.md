@@ -9,6 +9,10 @@ Changelog Format: Read from newest to oldest
 Release Date: Jul 26, 2027
 
 ## New Components
+ - Added 2 more folders : application and system folders - RT
+ - Added 2 more controllers: about and gallery - RT
+ - Create 3 views : welcome.php, gallery.php and about.php - RT
 
 ## Updated Components
+
 
