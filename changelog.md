@@ -1,33 +1,25 @@
 #Change Log
 
-Team membership:  AB (Captain) & CD (Mate)  
+Team membership:  Oliver (Captain) & Keir (Mate)  
 Team conventions: Allman notation, markdown for changelog  
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
-## *Version x.x*
+## *Version 1.0*
 
-Release Date: Jul 26, 2027
+Release Date: Jan 23, 2018
 
 ## New Components
 
 -   controllers
 
-    -   serbian (AB)
-    
-## Updated Components
-
--   controllers
-
-    -   german (CD)
-    -   hindi (CD)
-
--   models
-
-    -   italian (AB)
+    -   About
+    -   Gallery
+    -   Welcome
 
 -   views
 
-    -   slovenian (AB)
-    -   swedish
-
-
+    -   gallery.php
+    -   about.php
+    -   welcome.php
+    
+## Updated Components
