@@ -7,4 +7,5 @@ Must put name beside each etry
 Newest changes at top
 
 List of Changes
+Sam - Removed old changelog
 Sam - Added Changelog
