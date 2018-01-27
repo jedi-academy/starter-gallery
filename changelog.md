@@ -8,6 +8,8 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 
 Release Date: Jul 26, 2027
 
+First tutorial complete. 
+
 ## New Components
 
 -   controllers
